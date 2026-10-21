@@ -1,4 +1,3 @@
 <Solution>
   <Project Path="ParkingSystem/ParkingSystem.csproj" />
-  <Project Path="ParkingSystem.Checks/ParkingSystem.Checks.csproj" />
 </Solution>

@@ -1,42 +1,52 @@
-# ParkirAja — Desktop UI
+# ParkirAja — Desktop UI (Windows Forms)
 
-Open `ParkingSystem.slnx`, build, then open `Views/Login.cs` or `Views/MainForm.cs` with **View Designer**. `MainForm` owns a minimal sidebar and persistent workspace. The ten workspace pages remain editable `UserControl` designs in `Views/`.
+Sistem aplikasi desktop manajemen parkir berbasis Windows Forms (.NET 10).
 
-Startup membuka Login dengan autentikasi PostgreSQL dan PBKDF2-SHA256. Role berasal dari akun, bukan pilihan pengguna. Jukir memiliki Dashboard, Vehicle Entry, Vehicle Exit, Transaction History, dan Daily Report; Admin memiliki Dashboard, Validate Reports, Parking Areas, Jukir Accounts, dan Export Reports. Navigasi mempertahankan instance halaman dan input. Sign Out membatalkan request shell, kembali ke Login, dan membersihkan password. Constructor parameterless khusus Designer, tanpa akses DB.
+## Struktur Branch
 
-Vehicle details memakai enam `TextBox` readonly; input menggunakan kontrol native, caption dan summary tetap `Label`. Transaksi memakai tarif tetap yang disalin saat masuk, bukan tarif per jam. Plat dinormalisasi uppercase tanpa whitespace (1–20 ASCII alfanumerik), unik selama active lintas lokasi. Kapasitas dihitung dari transaksi active. Pembayaran shift lain pada lokasi sama dicatat atas petugas penerima, bukan petugas entry.
+Repository ini memiliki dua branch utama:
 
-Login disables maximize and centers its input group horizontally and vertically using native table layout. Workspace pages use percentage-based table layouts and expand with the available width. Below the 850-logical-pixel content minimum, native scrolling preserves access to fields and actions rather than shrinking text or overlapping controls. The shell supports resizing down to 920 × 600 logical pixels. Checks cover workspace widths 920, 1260, and 1600 and Login widths 480, 620, and 900 at the current Windows DPI.
+1. **`master`** (Branch saat ini):
+   - **Template UI & Struktur Kode Bersih**: Berisi seluruh desain antarmuka (UI/Forms), layout responsif, komponen custom (`RoundedControls`, `DarkDateTimePicker`, `AppTheme`), dan navigasi halaman.
+   - **Tanpa Logic & Tanpa Database**: Seluruh dependency database dan query SQL telah dilepas agar Anda dapat langsung fokus menuliskan business logic, state management, dan integrasi database secara manual.
+   - Setiap view (`Views/`) telah dilengkapi *event handler stub* dengan komentar `// TODO:` yang terstruktur rapi.
 
-Run checks from this directory:
+2. **`vibe`**:
+   - **Full Source Code**: Berisi implementasi utuh dari sistem parkir ParkirAja, termasuk koneksi database PostgreSQL, hashing password PBKDF2, service layer (`ParkingService`), cetak struk GDI, ekspor PDF, serta suite validasi otomatis (`ParkingSystem.Checks`).
 
+---
+
+## Memulai di Branch `master`
+
+### Prasyarat
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/)
+- Visual Studio 2022 / 2026 atau VS Code dengan C# Dev Kit
+
+### Menjalankan Project
 ```powershell
+# Masuk ke folder ParkingSystem
+cd ParkingSystem
+
+# Build solution
 dotnet build ParkingSystem.slnx
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File Check-Business.ps1
+
+# Jalankan aplikasi
+dotnet run --project ParkingSystem/ParkingSystem.csproj
 ```
 
-Wrapper menyediakan fixture runtime untuk `Check-Forms.ps1`; checker form standalone memerlukan fixture dan `PARKING_CHECKS_PASSWORD`. Checks meluncurkan seluruh Designer, login nyata dua role, navigasi SPA, state input, masked password, readonly details, dan resize; screenshot berada di `%TEMP%/ParkingSystem-Forms`.
-
-## PostgreSQL setup
-
-Schema awal berada di `ParkingSystem/Database/schema.sql`. Bootstrap eksplisit; aplikasi tidak membuat atau memigrasikan schema saat startup. Siapkan database owner dan role runtime terpisah (runtime bukan superuser, bukan pemilik schema), lalu jalankan:
-
-```powershell
-$env:PGPASSWORD = '<password owner>'
-.\Initialize-Database.ps1 -ConnectionString 'host=<server LAN> dbname=<database> user=<owner>' -RuntimeRole '<runtime role>'
-Remove-Item Env:PGPASSWORD
-$env:PARKING_DB_CONNECTION = 'Host=<server LAN>;Database=<database>;Username=<runtime role>;Password=<password runtime>'
-.\ParkingSystem\bin\Debug\net10.0-windows\ParkingSystem.exe --create-admin
-```
-
-`--create-admin` meminta username, nama, dan password tanpa echo; menolak bila admin sudah ada. Tidak ada kredensial bawaan. Bootstrap kedua memvalidasi versi 1 dan struktur tanpa mereset data. Kredensial koneksi langsung memberi akses DML database; batas kepercayaan adalah LAN dan operator pemegang kredensial, bukan role UI.
-
-`Check-Business.ps1` membuat cluster PostgreSQL 16 sementara pada loopback; tidak memakai database operator. Binary wajib tersedia di `C:\Program Files\PostgreSQL\16\bin` atau path eksplisit `-PostgresBin`.
-
-## Operasi parkir
-
-Tanggal bisnis menggunakan WIB (UTC+7); penyimpanan `timestamptz` dan filter rentang UTC half-open. Riwayat menampilkan entry/pembayaran petugas pada lokasi penugasan, 50 baris per halaman. Tarif lokasi yang berubah tidak mengubah tarif transaksi active. Konfirmasi pembayaran dibatalkan berarti tidak ada completion.
-
-Mutasi mengunci lokasi sebelum akun/transaksi dan memeriksa ulang penugasan aktif, sehingga sesi lama tidak dapat menulis setelah deaktivasi/reassignment. Entry memakai waktu database dan snapshot tarif; completion hanya sekali, dengan penerima pembayaran tersimpan terpisah. Validasi setoran hanya dilakukan Admin dan mencatat Admin tersebut sebagai validator. `TransactionChecks.RunAsync` menggunakan fixture `AuthChecks` untuk concurrency kapasitas/plat/exit, batas WIB, pagination, pergantian shift, dashboard, dan otorisasi validasi setoran; fixture transaksi dibersihkan sebelum smoke UI.
-
-Bukti dicetak setelah commit melalui preview dan dialog printer Windows. Printer gagal atau pembatalan tidak membatalkan transaksi; detail riwayat menyediakan cetak ulang. Tidak ada payment gateway.
+### Navigasi & Tampilan
+- **Form Login**:
+  - Ketik username apa saja lalu klik **Sign In** untuk membuka workspace **Jukir** (Petugas Parkir).
+  - Ketik username yang mengandung kata `admin` (misal: `admin`) lalu klik **Sign In** untuk membuka workspace **Admin**.
+- **Admin Pages**:
+  - `AdminDashboard` (Ringkasan statistik)
+  - `ReportValidation` (Validasi setoran jukir)
+  - `ParkingAreas` (Manajemen area & kapasitas parkir)
+  - `JukirAccounts` (Manajemen akun petugas jukir)
+  - `ExportReports` (Ekspor laporan berkala)
+- **Jukir Pages**:
+  - `JukirDashboard` (Statistik harian jukir)
+  - `VehicleEntry` (Input kendaraan masuk)
+  - `VehicleExit` (Pencarian & pembayaran kendaraan keluar)
+  - `TransactionHistory` (Riwayat transaksi)
+  - `DailyReport` (Laporan & pengajuan setoran harian)
