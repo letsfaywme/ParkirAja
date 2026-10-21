@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="10.0.3" />
+    <PackageReference Include="PDFsharp-GDI" Version="6.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Login.cs;Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\JukirDashboard.cs;Views\AdminDashboard.cs;Views\VehicleEntry.cs;Views\VehicleExit.cs;Views\TransactionHistory.cs;Views\DailyReport.cs;Views\ReportValidation.cs;Views\ParkingAreas.cs;Views\JukirAccounts.cs;Views\ExportReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

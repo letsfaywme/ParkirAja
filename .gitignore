@@ -1,0 +1,28 @@
+## Visual Studio & .NET
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## Build / Cache / Temp
+*.cache
+*.vsidx
+*.dtbcache*
+*.futdcache*
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## AI / Agent Local Skills
+.agents/
+skills-lock.json
+__pycache__/
+*.pyc
+
+## OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
