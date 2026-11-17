@@ -1,0 +1,30 @@
+name: .NET CI/CD Pipeline
+
+on:
+  push:
+    branches: [ master, vibe ]
+  pull_request:
+    branches: [ master, vibe ]
+
+jobs:
+  build-and-test:
+    name: Build & Test (Windows .NET 10)
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 10 SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Restore Dependencies
+      run: dotnet restore ParkingSystem/ParkingSystem.slnx
+
+    - name: Build Solution (Release)
+      run: dotnet build ParkingSystem/ParkingSystem.slnx --configuration Release --no-restore
+
+    - name: Run xUnit Unit & Integration Tests
+      run: dotnet test ParkingSystem/ParkingSystem.slnx --configuration Release --no-build --verbosity normal

@@ -1,30 +1,19 @@
-# ParkirAja — Desktop UI (Windows Forms)
+# ParkirAja — Parking System Desktop Application (.NET 10 / Windows Forms)
 
-Sistem aplikasi desktop manajemen parkir berbasis Windows Forms (.NET 10).
-
-## Struktur Branch
-
-Repository ini memiliki dua branch utama:
-
-1. **`master`** (Branch saat ini):
-   - **Template UI & Struktur Kode Bersih**: Berisi seluruh desain antarmuka (UI/Forms), layout responsif, komponen custom (`RoundedControls`, `DarkDateTimePicker`, `AppTheme`), dan navigasi halaman.
-   - **Tanpa Logic & Tanpa Database**: Seluruh dependency database dan query SQL telah dilepas agar Anda dapat langsung fokus menuliskan business logic, state management, dan integrasi database secara manual.
-   - Setiap view (`Views/`) telah dilengkapi *event handler stub* dengan komentar `// TODO:` yang terstruktur rapi.
-
-2. **`vibe`**:
-   - **Full Source Code**: Berisi implementasi utuh dari sistem parkir ParkirAja, termasuk koneksi database PostgreSQL, hashing password PBKDF2, service layer (`ParkingService`), cetak struk GDI, ekspor PDF, serta suite validasi otomatis (`ParkingSystem.Checks`).
+Sistem aplikasi desktop manajemen parkir terpadu berbasis Windows Forms (.NET 10) dengan dukungan arsitektur Entity Framework Core (In-Memory untuk pengembangan terisolasi dan siap migrasi ke PostgreSQL).
 
 ---
 
-## Memulai di Branch `master`
+## 1. Panduan Menjalankan Proyek
 
 ### Prasyarat
 - [.NET 10.0 SDK](https://dotnet.microsoft.com/)
-- Visual Studio 2022 / 2026 atau VS Code dengan C# Dev Kit
+- Windows OS (Windows Forms Desktop Runtime)
+- Visual Studio 2022/2026 atau VS Code dengan C# Dev Kit
 
-### Menjalankan Project
+### Build & Menjalankan Aplikasi
 ```powershell
-# Masuk ke folder ParkingSystem
+# Masuk ke direktori solution
 cd ParkingSystem
 
 # Build solution
@@ -34,19 +23,39 @@ dotnet build ParkingSystem.slnx
 dotnet run --project ParkingSystem/ParkingSystem.csproj
 ```
 
-### Navigasi & Tampilan
-- **Form Login**:
-  - Ketik username apa saja lalu klik **Sign In** untuk membuka workspace **Jukir** (Petugas Parkir).
-  - Ketik username yang mengandung kata `admin` (misal: `admin`) lalu klik **Sign In** untuk membuka workspace **Admin**.
-- **Admin Pages**:
-  - `AdminDashboard` (Ringkasan statistik)
-  - `ReportValidation` (Validasi setoran jukir)
-  - `ParkingAreas` (Manajemen area & kapasitas parkir)
-  - `JukirAccounts` (Manajemen akun petugas jukir)
-  - `ExportReports` (Ekspor laporan berkala)
-- **Jukir Pages**:
-  - `JukirDashboard` (Statistik harian jukir)
-  - `VehicleEntry` (Input kendaraan masuk)
-  - `VehicleExit` (Pencarian & pembayaran kendaraan keluar)
-  - `TransactionHistory` (Riwayat transaksi)
-  - `DailyReport` (Laporan & pengajuan setoran harian)
+### Menjalankan Pengujian Otomatis (xUnit & FluentAssertions)
+```powershell
+cd ParkingSystem
+dotnet test ParkingSystem.slnx
+```
+
+---
+
+## 2. Kredensial Autentikasi Demo
+
+Seluruh kata sandi diamankan secara kriptografis menggunakan algoritma hashing **PBKDF2 (HMAC-SHA256, 100.000 iterasi, salt 16-byte)**:
+
+| Peran | Username | Password | Penugasan Area | Hak Akses Modul |
+|---|---|---|---|---|
+| **Admin** | `admin` | `adminpassword` | Seluruh Area (Pusat) | Dashboard Global, Validasi Setoran, Kelola Area, Kelola Jukir, Ekspor Laporan |
+| **Jukir** | `jukir1` | `jukirpassword` | Area Parkir Utama (ID: 1) | Entri Kendaraan, Checkout/Exit, Riwayat Harian, Pengajuan Setoran |
+| **Jukir** | `jukir2` | `jukirpassword` | Area Parkir Timur (ID: 2) | Entri Kendaraan, Checkout/Exit, Riwayat Harian, Pengajuan Setoran |
+
+---
+
+## 3. Fitur Utama & Kepatuhan Arsitektur
+
+1. **Keamanan & Otorisasi**:
+   - `PasswordHasher`: Hashing dan verifikasi kata sandi waktu-konstan (`FixedTimeEquals`).
+   - `ISessionAware`: Seluruh form operasional (Vehicle Entry, Exit, Daily Report, Validation) mengikat transaksi ke sesi pengguna yang sedang login aktif.
+2. **Arsitektur Thread-Safe & Async**:
+   - `IDbContextFactory<ParkingDbContext>`: Mencegah konflik multi-thread dan memory leak.
+   - `IParkingService`: Layer service asynchronous untuk semua operasi bisnis parkir.
+   - Timestamps standar UTC (`DateTimeOffset.UtcNow`).
+3. **Penyelarasan Skema & Diagram Draw.io**:
+   - Berkas spesifikasi `../Parking_System.drawio` telah disinkronkan secara menyeluruh (Use Case, Activity Diagram, ERD, dan Wireframes).
+   - Foreign Keys (`ParkingSpot`, `Jukir`, `ExitJukir`, `Validator`) dan relasi navigasi EF Core terkonfigurasi lengkap.
+   - Validasi format plat nomor standar Indonesia (`^[A-Z]{1,2}\s\d{1,4}\s[A-Z]{1,3}$`).
+4. **DevOps & Build Governance**:
+   - Central Package Management (CPM) via `Directory.Packages.props`.
+   - CI/CD workflow GitHub Actions di `.github/workflows/ci.yml`.

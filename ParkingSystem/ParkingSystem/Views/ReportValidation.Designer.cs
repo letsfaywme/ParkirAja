@@ -1,4 +1,4 @@
-#nullable enable annotations
+﻿#nullable enable annotations
 namespace ParkingSystem;
 
 partial class ReportValidation
@@ -13,16 +13,16 @@ partial class ReportValidation
     private void InitializeComponent()
     {
         label1 = new Label();
-        reviewsubmittedreportsPanel = new RoundedPanel();
+        reviewsubmittedreportsPanel = new Panel();
         label4 = new Label();
         label6 = new Label();
-        reportdatePanel = new RoundedPanel();
+        reportdatePanel = new Panel();
         reportdateDarkDateTimePicker = new DarkDateTimePicker();
         label10 = new Label();
-        statusPanel = new RoundedPanel();
+        statusPanel = new Panel();
         statusComboBox = new ComboBox();
-        searchButton = new RoundedButton();
-        jukirreportsPanel = new RoundedPanel();
+        searchButton = new Button();
+        jukirreportsPanel = new Panel();
         label16 = new Label();
         grid17 = new DataGridView();
         column19 = new DataGridViewTextBoxColumn();
@@ -31,10 +31,10 @@ partial class ReportValidation
         column22 = new DataGridViewTextBoxColumn();
         column23 = new DataGridViewTextBoxColumn();
         label24 = new Label();
-        reviewnotePanel = new RoundedPanel();
+        reviewnotePanel = new Panel();
         reviewnoteTextBox = new TextBox();
-        rejectButton = new RoundedButton();
-        approveButton = new RoundedButton();
+        rejectButton = new Button();
+        approveButton = new Button();
         SuspendLayout();
         label1.Name = "label1";
         label1.Location = new Point(20, 7);
@@ -49,10 +49,10 @@ partial class ReportValidation
         reviewsubmittedreportsPanel.Location = new Point(20, 56);
         reviewsubmittedreportsPanel.Size = new Size(807, 131);
         reviewsubmittedreportsPanel.BackColor = AppTheme.CardBackground;
+        reviewsubmittedreportsPanel.BorderStyle = BorderStyle.FixedSingle;
         reviewsubmittedreportsPanel.ForeColor = AppTheme.Text;
         reviewsubmittedreportsPanel.TabIndex = 2;
         reviewsubmittedreportsPanel.Padding = Padding.Empty;
-        reviewsubmittedreportsPanel.BorderColor = AppTheme.CardBorder;
         label4.Name = "label4";
         label4.Location = new Point(18, 16);
         label4.Size = new Size(771, 15);
@@ -75,6 +75,7 @@ partial class ReportValidation
         reportdatePanel.Location = new Point(20, 71);
         reportdatePanel.Size = new Size(246, 38);
         reportdatePanel.BackColor = AppTheme.InputBackground;
+        reportdatePanel.BorderStyle = BorderStyle.FixedSingle;
         reportdatePanel.ForeColor = AppTheme.Text;
         reportdatePanel.TabIndex = 7;
         reportdatePanel.Padding = Padding.Empty;
@@ -101,6 +102,7 @@ partial class ReportValidation
         statusPanel.Location = new Point(282, 71);
         statusPanel.Size = new Size(246, 38);
         statusPanel.BackColor = AppTheme.InputBackground;
+        statusPanel.BorderStyle = BorderStyle.FixedSingle;
         statusPanel.ForeColor = AppTheme.Text;
         statusPanel.TabIndex = 11;
         statusPanel.Padding = Padding.Empty;
@@ -119,6 +121,8 @@ partial class ReportValidation
         searchButton.Location = new Point(640, 71);
         searchButton.Size = new Size(148, 36);
         searchButton.BackColor = AppTheme.ButtonPrimaryBackground;
+        searchButton.FlatStyle = FlatStyle.Flat;
+        searchButton.FlatAppearance.BorderSize = 0;
         searchButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         searchButton.TabIndex = 13;
         searchButton.Text = "Search";
@@ -128,10 +132,10 @@ partial class ReportValidation
         jukirreportsPanel.Location = new Point(20, 207);
         jukirreportsPanel.Size = new Size(807, 242);
         jukirreportsPanel.BackColor = AppTheme.CardBackground;
+        jukirreportsPanel.BorderStyle = BorderStyle.FixedSingle;
         jukirreportsPanel.ForeColor = AppTheme.Text;
         jukirreportsPanel.TabIndex = 14;
         jukirreportsPanel.Padding = Padding.Empty;
-        jukirreportsPanel.BorderColor = AppTheme.CardBorder;
         label16.Name = "label16";
         label16.Location = new Point(18, 16);
         label16.Size = new Size(771, 15);
@@ -162,13 +166,13 @@ partial class ReportValidation
         column19.HeaderText = "Jukir";
         grid17.Columns.Add(column19);
         column20.Name = "column20";
-        column20.HeaderText = "Date";
+        column20.HeaderText = "Parking area";
         grid17.Columns.Add(column20);
         column21.Name = "column21";
-        column21.HeaderText = "Transactions";
+        column21.HeaderText = "Expected";
         grid17.Columns.Add(column21);
         column22.Name = "column22";
-        column22.HeaderText = "Revenue";
+        column22.HeaderText = "Deposited";
         grid17.Columns.Add(column22);
         column23.Name = "column23";
         column23.HeaderText = "Status";
@@ -186,6 +190,7 @@ partial class ReportValidation
         reviewnotePanel.Location = new Point(20, 490);
         reviewnotePanel.Size = new Size(525, 38);
         reviewnotePanel.BackColor = AppTheme.InputBackground;
+        reviewnotePanel.BorderStyle = BorderStyle.FixedSingle;
         reviewnotePanel.ForeColor = AppTheme.Text;
         reviewnotePanel.TabIndex = 25;
         reviewnotePanel.Padding = Padding.Empty;
@@ -202,6 +207,8 @@ partial class ReportValidation
         rejectButton.Location = new Point(564, 490);
         rejectButton.Size = new Size(115, 36);
         rejectButton.BackColor = AppTheme.ButtonSecondaryBackground;
+        rejectButton.FlatStyle = FlatStyle.Flat;
+        rejectButton.FlatAppearance.BorderSize = 0;
         rejectButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         rejectButton.TabIndex = 27;
         rejectButton.Text = "Reject";
@@ -211,6 +218,8 @@ partial class ReportValidation
         approveButton.Location = new Point(695, 490);
         approveButton.Size = new Size(131, 36);
         approveButton.BackColor = AppTheme.ButtonPrimaryBackground;
+        approveButton.FlatStyle = FlatStyle.Flat;
+        approveButton.FlatAppearance.BorderSize = 0;
         approveButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         approveButton.TabIndex = 28;
         approveButton.Text = "Approve";
@@ -242,38 +251,18 @@ partial class ReportValidation
         Name = "ReportValidation";
         AutoScroll = true;
         AutoScrollMinSize = new Size(850, 618);
-        responsiveLayout = new TableLayoutPanel();
+
+        layoutRow4 = new TableLayoutPanel();
+        responsiveLayout = new Panel();
         responsiveLayout.Name = "responsiveLayout";
         responsiveLayout.Dock = DockStyle.Top;
         responsiveLayout.AutoSize = true;
         responsiveLayout.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         responsiveLayout.MinimumSize = new Size(850, 0);
         responsiveLayout.Padding = new Padding(20, 8, 20, 20);
-        responsiveLayout.ColumnCount = 1;
-        responsiveLayout.RowCount = 5;
-        responsiveLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
         label1.Margin = new Padding(0, 0, 0, 29);
         label1.Height = 20;
         label1.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(label1, 0, 0);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        reviewsubmittedreportsPanel.Margin = new Padding(0, 0, 0, 20);
-        reviewsubmittedreportsPanel.Height = 131;
-        reviewsubmittedreportsPanel.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(reviewsubmittedreportsPanel, 0, 1);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        jukirreportsPanel.Margin = new Padding(0, 0, 0, 20);
-        jukirreportsPanel.Height = 242;
-        jukirreportsPanel.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(jukirreportsPanel, 0, 2);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        label24.Margin = new Padding(0, 0, 0, 9);
-        label24.Height = 12;
-        label24.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(label24, 0, 3);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        layoutRow4 = new TableLayoutPanel();
         layoutRow4.Dock = DockStyle.Top;
         layoutRow4.Height = 38;
         layoutRow4.Margin = new Padding(0, 0, 0, 12);
@@ -281,18 +270,23 @@ partial class ReportValidation
         layoutRow4.RowCount = 1;
         layoutRow4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
         layoutRow4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 68.0934F));
-        reviewnotePanel.Dock = DockStyle.Fill;
-        reviewnotePanel.Margin = new Padding(0, 0, 12, 0);
         layoutRow4.Controls.Add(reviewnotePanel, 0, 0);
         layoutRow4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.9157F));
-        rejectButton.Dock = DockStyle.Fill;
-        rejectButton.Margin = new Padding(0, 0, 12, 0);
         layoutRow4.Controls.Add(rejectButton, 1, 0);
         layoutRow4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.9909F));
-        approveButton.Dock = DockStyle.Fill;
-        approveButton.Margin = new Padding(0, 0, 0, 0);
         layoutRow4.Controls.Add(approveButton, 2, 0);
-        responsiveLayout.Controls.Add(layoutRow4, 0, 4);
+        reviewsubmittedreportsPanel.Dock = DockStyle.Top;
+        jukirreportsPanel.Dock = DockStyle.Top;
+        responsiveLayout.Controls.Add(layoutRow4);
+        label24.Dock = DockStyle.Top;
+        label24.Height = 12;
+        responsiveLayout.Controls.Add(label24);
+        responsiveLayout.Controls.Add(jukirreportsPanel);
+        responsiveLayout.Controls.Add(reviewsubmittedreportsPanel);
+        responsiveLayout.Controls.Add(label1);
+        reviewnotePanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        rejectButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        approveButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
         reviewnoteTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         grid17.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         label16.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -306,16 +300,16 @@ partial class ReportValidation
     }
     #endregion
     private Label label1 = null!;
-    private RoundedPanel reviewsubmittedreportsPanel = null!;
+    private Panel reviewsubmittedreportsPanel = null!;
     private Label label4 = null!;
     private Label label6 = null!;
-    private RoundedPanel reportdatePanel = null!;
+    private Panel reportdatePanel = null!;
     private DarkDateTimePicker reportdateDarkDateTimePicker = null!;
     private Label label10 = null!;
-    private RoundedPanel statusPanel = null!;
+    private Panel statusPanel = null!;
     private ComboBox statusComboBox = null!;
-    private RoundedButton searchButton = null!;
-    private RoundedPanel jukirreportsPanel = null!;
+    private Button searchButton = null!;
+    private Panel jukirreportsPanel = null!;
     private Label label16 = null!;
     private DataGridView grid17 = null!;
     private DataGridViewTextBoxColumn column19 = null!;
@@ -324,10 +318,10 @@ partial class ReportValidation
     private DataGridViewTextBoxColumn column22 = null!;
     private DataGridViewTextBoxColumn column23 = null!;
     private Label label24 = null!;
-    private RoundedPanel reviewnotePanel = null!;
+    private Panel reviewnotePanel = null!;
     private TextBox reviewnoteTextBox = null!;
-    private RoundedButton rejectButton = null!;
-    private RoundedButton approveButton = null!;
-    private TableLayoutPanel responsiveLayout = null!;
+    private Button rejectButton = null!;
+    private Button approveButton = null!;
+    private Panel responsiveLayout = null!;
     private TableLayoutPanel layoutRow4 = null!;
 }

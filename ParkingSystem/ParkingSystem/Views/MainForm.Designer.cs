@@ -15,67 +15,19 @@ partial class MainForm
         sidebar = new Panel();
         brandLabel = new Label();
         workspaceLabel = new Label();
-        dashboardButton = new RoundedButton();
-        secondButton = new RoundedButton();
-        thirdButton = new RoundedButton();
-        fourthButton = new RoundedButton();
-        fifthButton = new RoundedButton();
-        signOutButton = new RoundedButton();
+        dashboardButton = new Button();
+        secondButton = new Button();
+        thirdButton = new Button();
+        fourthButton = new Button();
+        fifthButton = new Button();
+        signOutButton = new Button();
         contentPanel = new Panel();
-        SuspendLayout();
         sidebar.SuspendLayout();
-        sidebar.BackColor = AppTheme.SidebarBackground;
-        sidebar.Dock = DockStyle.Left;
-        sidebar.Size = new Size(210, 707);
-        sidebar.Name = "sidebar";
-        brandLabel.Text = "ParkirAja";
-        brandLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-        brandLabel.ForeColor = AppTheme.Text;
-        brandLabel.Location = new Point(20, 28);
-        brandLabel.Size = new Size(180, 30);
-        workspaceLabel.Text = "JUKIR WORKSPACE";
-        workspaceLabel.ForeColor = AppTheme.Text;
-        workspaceLabel.Location = new Point(20, 70);
-        workspaceLabel.Size = new Size(180, 24);
-        dashboardButton.Name = "dashboardButton";
-        dashboardButton.Text = "Dashboard";
-        dashboardButton.Location = new Point(14, 120);
-        dashboardButton.Size = new Size(182, 44);
-        dashboardButton.TabIndex = 0;
-        dashboardButton.Click += Navigate;
-        secondButton.Name = "secondButton";
-        secondButton.Text = "Vehicle Entry";
-        secondButton.Location = new Point(14, 174);
-        secondButton.Size = new Size(182, 44);
-        secondButton.TabIndex = 1;
-        secondButton.Click += Navigate;
-        thirdButton.Name = "thirdButton";
-        thirdButton.Text = "Vehicle Exit";
-        thirdButton.Location = new Point(14, 228);
-        thirdButton.Size = new Size(182, 44);
-        thirdButton.TabIndex = 2;
-        thirdButton.Click += Navigate;
-        fourthButton.Name = "fourthButton";
-        fourthButton.Text = "Transaction History";
-        fourthButton.Location = new Point(14, 282);
-        fourthButton.Size = new Size(182, 44);
-        fourthButton.TabIndex = 3;
-        fourthButton.Click += Navigate;
-        fifthButton.Name = "fifthButton";
-        fifthButton.Text = "Daily Report";
-        fifthButton.Location = new Point(14, 336);
-        fifthButton.Size = new Size(182, 44);
-        fifthButton.TabIndex = 4;
-        fifthButton.Click += Navigate;
-        signOutButton.Name = "signOutButton";
-        signOutButton.Text = "Sign Out";
-        signOutButton.Location = new Point(14, 639);
-        signOutButton.Size = new Size(182, 44);
-        signOutButton.BackColor = AppTheme.ButtonSecondaryBackground;
-        signOutButton.ForeColor = AppTheme.ButtonSecondaryForeground;
-        signOutButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-        signOutButton.TabIndex = 5;
-        signOutButton.Click += SignOut;
+        SuspendLayout();
+        // 
+        // sidebar
+        // 
+        sidebar.BackColor = Color.FromArgb(240, 253, 244);
         sidebar.Controls.Add(brandLabel);
         sidebar.Controls.Add(workspaceLabel);
         sidebar.Controls.Add(dashboardButton);
@@ -84,21 +36,140 @@ partial class MainForm
         sidebar.Controls.Add(fourthButton);
         sidebar.Controls.Add(fifthButton);
         sidebar.Controls.Add(signOutButton);
-        contentPanel.Name = "contentPanel";
-        contentPanel.BackColor = AppTheme.Background;
+        sidebar.Dock = DockStyle.Left;
+        sidebar.Location = new Point(0, 0);
+        sidebar.Margin = new Padding(4, 4, 4, 4);
+        sidebar.Name = "sidebar";
+        sidebar.Size = new Size(262, 884);
+        sidebar.TabIndex = 1;
+        // 
+        // brandLabel
+        // 
+        brandLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+        brandLabel.ForeColor = Color.FromArgb(15, 23, 42);
+        brandLabel.Location = new Point(25, 35);
+        brandLabel.Margin = new Padding(4, 0, 4, 0);
+        brandLabel.Name = "brandLabel";
+        brandLabel.Size = new Size(225, 38);
+        brandLabel.TabIndex = 0;
+        brandLabel.Text = "ParkirAja";
+        // 
+        // workspaceLabel
+        // 
+        workspaceLabel.ForeColor = Color.FromArgb(15, 23, 42);
+        workspaceLabel.Location = new Point(25, 88);
+        workspaceLabel.Margin = new Padding(4, 0, 4, 0);
+        workspaceLabel.Name = "workspaceLabel";
+        workspaceLabel.Size = new Size(225, 30);
+        workspaceLabel.TabIndex = 1;
+        workspaceLabel.Text = "JUKIR WORKSPACE";
+        // 
+        // dashboardButton
+        // 
+        dashboardButton.Cursor = Cursors.Hand;
+        dashboardButton.FlatAppearance.BorderSize = 0;
+        dashboardButton.FlatStyle = FlatStyle.Flat;
+        dashboardButton.Location = new Point(18, 150);
+        dashboardButton.Margin = new Padding(4, 4, 4, 4);
+        dashboardButton.Name = "dashboardButton";
+        dashboardButton.Size = new Size(228, 55);
+        dashboardButton.TabIndex = 0;
+        dashboardButton.Text = "Dashboard";
+        dashboardButton.Click += Navigate;
+        // 
+        // secondButton
+        // 
+        secondButton.Cursor = Cursors.Hand;
+        secondButton.FlatAppearance.BorderSize = 0;
+        secondButton.FlatStyle = FlatStyle.Flat;
+        secondButton.Location = new Point(18, 218);
+        secondButton.Margin = new Padding(4, 4, 4, 4);
+        secondButton.Name = "secondButton";
+        secondButton.Size = new Size(228, 55);
+        secondButton.TabIndex = 1;
+        secondButton.Text = "Vehicle Entry";
+        secondButton.Click += Navigate;
+        // 
+        // thirdButton
+        // 
+        thirdButton.Cursor = Cursors.Hand;
+        thirdButton.FlatAppearance.BorderSize = 0;
+        thirdButton.FlatStyle = FlatStyle.Flat;
+        thirdButton.Location = new Point(18, 285);
+        thirdButton.Margin = new Padding(4, 4, 4, 4);
+        thirdButton.Name = "thirdButton";
+        thirdButton.Size = new Size(228, 55);
+        thirdButton.TabIndex = 2;
+        thirdButton.Text = "Vehicle Exit";
+        thirdButton.Click += Navigate;
+        // 
+        // fourthButton
+        // 
+        fourthButton.Cursor = Cursors.Hand;
+        fourthButton.FlatAppearance.BorderSize = 0;
+        fourthButton.FlatStyle = FlatStyle.Flat;
+        fourthButton.Location = new Point(18, 352);
+        fourthButton.Margin = new Padding(4, 4, 4, 4);
+        fourthButton.Name = "fourthButton";
+        fourthButton.Size = new Size(228, 55);
+        fourthButton.TabIndex = 3;
+        fourthButton.Text = "Transaction History";
+        fourthButton.Click += Navigate;
+        // 
+        // fifthButton
+        // 
+        fifthButton.Cursor = Cursors.Hand;
+        fifthButton.FlatAppearance.BorderSize = 0;
+        fifthButton.FlatStyle = FlatStyle.Flat;
+        fifthButton.Location = new Point(18, 420);
+        fifthButton.Margin = new Padding(4, 4, 4, 4);
+        fifthButton.Name = "fifthButton";
+        fifthButton.Size = new Size(228, 55);
+        fifthButton.TabIndex = 4;
+        fifthButton.Text = "Daily Report";
+        fifthButton.Click += Navigate;
+        // 
+        // signOutButton
+        // 
+        signOutButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+        signOutButton.BackColor = Color.FromArgb(241, 245, 249);
+        signOutButton.FlatAppearance.BorderSize = 0;
+        signOutButton.FlatStyle = FlatStyle.Flat;
+        signOutButton.ForeColor = Color.FromArgb(15, 23, 42);
+        signOutButton.Location = new Point(18, 799);
+        signOutButton.Margin = new Padding(4, 4, 4, 4);
+        signOutButton.Name = "signOutButton";
+        signOutButton.Size = new Size(228, 55);
+        signOutButton.TabIndex = 5;
+        signOutButton.Text = "Sign Out";
+        signOutButton.UseVisualStyleBackColor = false;
+        signOutButton.Click += SignOut;
+        // 
+        // contentPanel
+        // 
+        contentPanel.BackColor = Color.FromArgb(248, 250, 252);
         contentPanel.Dock = DockStyle.Fill;
+        contentPanel.Location = new Point(262, 0);
+        contentPanel.Margin = new Padding(4, 4, 4, 4);
+        contentPanel.Name = "contentPanel";
+        contentPanel.Size = new Size(1313, 884);
+        contentPanel.TabIndex = 0;
+        // 
+        // MainForm
+        // 
+        AutoScaleDimensions = new SizeF(120F, 120F);
+        AutoScaleMode = AutoScaleMode.Dpi;
+        BackColor = Color.FromArgb(248, 250, 252);
+        ClientSize = new Size(1575, 884);
         Controls.Add(contentPanel);
         Controls.Add(sidebar);
-        AutoScaleDimensions = new SizeF(96F, 96F);
-        AutoScaleMode = AutoScaleMode.Dpi;
-        BackColor = AppTheme.Background;
-        ForeColor = AppTheme.Text;
         Font = new Font("Segoe UI", 9F);
-        ClientSize = new Size(1260, 707);
-        MinimumSize = new Size(920, 600);
+        ForeColor = Color.FromArgb(15, 23, 42);
+        Margin = new Padding(4, 4, 4, 4);
+        MinimumSize = new Size(1146, 738);
+        Name = "MainForm";
         StartPosition = FormStartPosition.CenterScreen;
         Text = "ParkirAja — Jukir Dashboard";
-        Name = "MainForm";
         sidebar.ResumeLayout(false);
         ResumeLayout(false);
     }
@@ -106,11 +177,11 @@ partial class MainForm
     private Panel sidebar = null!;
     private Label brandLabel = null!;
     private Label workspaceLabel = null!;
-    private RoundedButton dashboardButton = null!;
-    private RoundedButton secondButton = null!;
-    private RoundedButton thirdButton = null!;
-    private RoundedButton fourthButton = null!;
-    private RoundedButton fifthButton = null!;
-    private RoundedButton signOutButton = null!;
+    private Button dashboardButton = null!;
+    private Button secondButton = null!;
+    private Button thirdButton = null!;
+    private Button fourthButton = null!;
+    private Button fifthButton = null!;
+    private Button signOutButton = null!;
     private Panel contentPanel = null!;
 }

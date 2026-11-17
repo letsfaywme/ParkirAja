@@ -1,4 +1,4 @@
-#nullable enable annotations
+﻿#nullable enable annotations
 namespace ParkingSystem;
 
 partial class ParkingAreas
@@ -13,9 +13,9 @@ partial class ParkingAreas
     private void InitializeComponent()
     {
         label1 = new Label();
-        parkingareasPanel = new RoundedPanel();
+        parkingareasPanel = new Panel();
         label4 = new Label();
-        searchPanel = new RoundedPanel();
+        searchPanel = new Panel();
         searchTextBox = new TextBox();
         grid5 = new DataGridView();
         column7 = new DataGridViewTextBoxColumn();
@@ -23,24 +23,24 @@ partial class ParkingAreas
         column9 = new DataGridViewTextBoxColumn();
         column10 = new DataGridViewTextBoxColumn();
         column11 = new DataGridViewTextBoxColumn();
-        areadetailsPanel = new RoundedPanel();
+        areadetailsPanel = new Panel();
         label13 = new Label();
         label15 = new Label();
-        areanamePanel = new RoundedPanel();
+        areanamePanel = new Panel();
         areanameTextBox = new TextBox();
         label19 = new Label();
-        capacityPanel = new RoundedPanel();
+        capacityPanel = new Panel();
         capacityNumericUpDown = new NumericUpDown();
         motorcycleRateLabel = new Label();
-        motorcycleRatePanel = new RoundedPanel();
+        motorcycleRatePanel = new Panel();
         motorcycleRateNumericUpDown = new NumericUpDown();
         carRateLabel = new Label();
-        carRatePanel = new RoundedPanel();
+        carRatePanel = new Panel();
         carRateNumericUpDown = new NumericUpDown();
-        addButton = new RoundedButton();
-        editButton = new RoundedButton();
-        deleteButton = new RoundedButton();
-        saveButton = new RoundedButton();
+        addButton = new Button();
+        editButton = new Button();
+        deleteButton = new Button();
+        saveButton = new Button();
         SuspendLayout();
         label1.Name = "label1";
         label1.Location = new Point(20, 7);
@@ -55,10 +55,10 @@ partial class ParkingAreas
         parkingareasPanel.Location = new Point(20, 56);
         parkingareasPanel.Size = new Size(807, 262);
         parkingareasPanel.BackColor = AppTheme.CardBackground;
+        parkingareasPanel.BorderStyle = BorderStyle.FixedSingle;
         parkingareasPanel.ForeColor = AppTheme.Text;
         parkingareasPanel.TabIndex = 2;
         parkingareasPanel.Padding = Padding.Empty;
-        parkingareasPanel.BorderColor = AppTheme.CardBorder;
         label4.Name = "label4";
         label4.Location = new Point(18, 16);
         label4.Size = new Size(300, 15);
@@ -71,8 +71,8 @@ partial class ParkingAreas
         searchPanel.Location = new Point(555, 8);
         searchPanel.Size = new Size(240, 34);
         searchPanel.BackColor = AppTheme.InputBackground;
+        searchPanel.BorderStyle = BorderStyle.FixedSingle;
         searchPanel.ForeColor = AppTheme.Text;
-        searchPanel.BorderColor = AppTheme.CardBorder;
         searchPanel.TabIndex = 6;
         searchPanel.Padding = Padding.Empty;
         searchTextBox.Name = "searchTextBox";
@@ -108,10 +108,10 @@ partial class ParkingAreas
         column8.HeaderText = "Capacity";
         grid5.Columns.Add(column8);
         column9.Name = "column9";
-        column9.HeaderText = "Occupied";
+        column9.HeaderText = "Motorcycle rate";
         grid5.Columns.Add(column9);
         column10.Name = "column10";
-        column10.HeaderText = "Available";
+        column10.HeaderText = "Car rate";
         grid5.Columns.Add(column10);
         column11.Name = "column11";
         column11.HeaderText = "Status";
@@ -120,10 +120,10 @@ partial class ParkingAreas
         areadetailsPanel.Location = new Point(20, 338);
         areadetailsPanel.Size = new Size(807, 252);
         areadetailsPanel.BackColor = AppTheme.CardBackground;
+        areadetailsPanel.BorderStyle = BorderStyle.FixedSingle;
         areadetailsPanel.ForeColor = AppTheme.Text;
         areadetailsPanel.TabIndex = 11;
         areadetailsPanel.Padding = Padding.Empty;
-        areadetailsPanel.BorderColor = AppTheme.CardBorder;
         label13.Name = "label13";
         label13.Location = new Point(18, 16);
         label13.Size = new Size(771, 15);
@@ -146,6 +146,7 @@ partial class ParkingAreas
         areanamePanel.Location = new Point(20, 68);
         areanamePanel.Size = new Size(376, 38);
         areanamePanel.BackColor = AppTheme.InputBackground;
+        areanamePanel.BorderStyle = BorderStyle.FixedSingle;
         areanamePanel.ForeColor = AppTheme.Text;
         areanamePanel.TabIndex = 16;
         areanamePanel.Padding = Padding.Empty;
@@ -171,6 +172,7 @@ partial class ParkingAreas
         capacityPanel.Location = new Point(412, 68);
         capacityPanel.Size = new Size(376, 38);
         capacityPanel.BackColor = AppTheme.InputBackground;
+        capacityPanel.BorderStyle = BorderStyle.FixedSingle;
         capacityPanel.ForeColor = AppTheme.Text;
         capacityPanel.TabIndex = 20;
         capacityPanel.Padding = Padding.Empty;
@@ -196,6 +198,7 @@ partial class ParkingAreas
         motorcycleRatePanel.Location = new Point(20, 138);
         motorcycleRatePanel.Size = new Size(376, 38);
         motorcycleRatePanel.BackColor = AppTheme.InputBackground;
+        motorcycleRatePanel.BorderStyle = BorderStyle.FixedSingle;
         motorcycleRatePanel.ForeColor = AppTheme.Text;
         motorcycleRatePanel.TabIndex = 23;
         motorcycleRatePanel.Padding = Padding.Empty;
@@ -222,6 +225,7 @@ partial class ParkingAreas
         carRatePanel.Location = new Point(412, 138);
         carRatePanel.Size = new Size(376, 38);
         carRatePanel.BackColor = AppTheme.InputBackground;
+        carRatePanel.BorderStyle = BorderStyle.FixedSingle;
         carRatePanel.ForeColor = AppTheme.Text;
         carRatePanel.TabIndex = 26;
         carRatePanel.Padding = Padding.Empty;
@@ -239,6 +243,8 @@ partial class ParkingAreas
         addButton.Location = new Point(20, 196);
         addButton.Size = new Size(110, 36);
         addButton.BackColor = AppTheme.ButtonSecondaryBackground;
+        addButton.FlatStyle = FlatStyle.Flat;
+        addButton.FlatAppearance.BorderSize = 0;
         addButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         addButton.TabIndex = 28;
         addButton.Text = "Tambah Baru";
@@ -248,6 +254,8 @@ partial class ParkingAreas
         editButton.Location = new Point(140, 196);
         editButton.Size = new Size(110, 36);
         editButton.BackColor = AppTheme.ButtonSecondaryBackground;
+        editButton.FlatStyle = FlatStyle.Flat;
+        editButton.FlatAppearance.BorderSize = 0;
         editButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         editButton.TabIndex = 29;
         editButton.Text = "Pilih Edit";
@@ -257,6 +265,8 @@ partial class ParkingAreas
         deleteButton.Location = new Point(260, 196);
         deleteButton.Size = new Size(110, 36);
         deleteButton.BackColor = AppTheme.ButtonSecondaryBackground;
+        deleteButton.FlatStyle = FlatStyle.Flat;
+        deleteButton.FlatAppearance.BorderSize = 0;
         deleteButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         deleteButton.TabIndex = 30;
         deleteButton.Text = "Nonaktifkan";
@@ -266,6 +276,8 @@ partial class ParkingAreas
         saveButton.Location = new Point(664, 196);
         saveButton.Size = new Size(123, 36);
         saveButton.BackColor = AppTheme.ButtonPrimaryBackground;
+        saveButton.FlatStyle = FlatStyle.Flat;
+        saveButton.FlatAppearance.BorderSize = 0;
         saveButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         saveButton.TabIndex = 31;
         saveButton.Text = "Simpan";
@@ -303,31 +315,21 @@ partial class ParkingAreas
         Name = "ParkingAreas";
         AutoScroll = true;
         AutoScrollMinSize = new Size(850, 618);
-        responsiveLayout = new TableLayoutPanel();
+        responsiveLayout = new Panel();
         responsiveLayout.Name = "responsiveLayout";
         responsiveLayout.Dock = DockStyle.Top;
         responsiveLayout.AutoSize = true;
         responsiveLayout.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         responsiveLayout.MinimumSize = new Size(850, 0);
         responsiveLayout.Padding = new Padding(20, 8, 20, 20);
-        responsiveLayout.ColumnCount = 1;
-        responsiveLayout.RowCount = 3;
-        responsiveLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
         label1.Margin = new Padding(0, 0, 0, 29);
         label1.Height = 20;
         label1.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(label1, 0, 0);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        parkingareasPanel.Margin = new Padding(0, 0, 0, 20);
-        parkingareasPanel.Height = 262;
         parkingareasPanel.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(parkingareasPanel, 0, 1);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        areadetailsPanel.Margin = new Padding(0, 0, 0, 12);
-        areadetailsPanel.Height = 252;
         areadetailsPanel.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(areadetailsPanel, 0, 2);
+        responsiveLayout.Controls.Add(areadetailsPanel);
+        responsiveLayout.Controls.Add(parkingareasPanel);
+        responsiveLayout.Controls.Add(label1);
         saveButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
         capacityNumericUpDown.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         capacityPanel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -351,9 +353,9 @@ partial class ParkingAreas
     }
     #endregion
     private Label label1 = null!;
-    private RoundedPanel parkingareasPanel = null!;
+    private Panel parkingareasPanel = null!;
     private Label label4 = null!;
-    private RoundedPanel searchPanel = null!;
+    private Panel searchPanel = null!;
     private TextBox searchTextBox = null!;
     private DataGridView grid5 = null!;
     private DataGridViewTextBoxColumn column7 = null!;
@@ -361,23 +363,23 @@ partial class ParkingAreas
     private DataGridViewTextBoxColumn column9 = null!;
     private DataGridViewTextBoxColumn column10 = null!;
     private DataGridViewTextBoxColumn column11 = null!;
-    private RoundedPanel areadetailsPanel = null!;
+    private Panel areadetailsPanel = null!;
     private Label label13 = null!;
     private Label label15 = null!;
-    private RoundedPanel areanamePanel = null!;
+    private Panel areanamePanel = null!;
     private TextBox areanameTextBox = null!;
     private Label label19 = null!;
-    private RoundedPanel capacityPanel = null!;
+    private Panel capacityPanel = null!;
     private Label motorcycleRateLabel = null!;
-    private RoundedPanel motorcycleRatePanel = null!;
+    private Panel motorcycleRatePanel = null!;
     private NumericUpDown motorcycleRateNumericUpDown = null!;
     private Label carRateLabel = null!;
-    private RoundedPanel carRatePanel = null!;
+    private Panel carRatePanel = null!;
     private NumericUpDown carRateNumericUpDown = null!;
     private NumericUpDown capacityNumericUpDown = null!;
-    private RoundedButton addButton = null!;
-    private RoundedButton editButton = null!;
-    private RoundedButton deleteButton = null!;
-    private RoundedButton saveButton = null!;
-    private TableLayoutPanel responsiveLayout = null!;
+    private Button addButton = null!;
+    private Button editButton = null!;
+    private Button deleteButton = null!;
+    private Button saveButton = null!;
+    private Panel responsiveLayout = null!;
 }

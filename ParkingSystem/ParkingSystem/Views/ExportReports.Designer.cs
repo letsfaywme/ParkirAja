@@ -1,4 +1,4 @@
-#nullable enable annotations
+﻿#nullable enable annotations
 namespace ParkingSystem;
 
 partial class ExportReports
@@ -13,21 +13,21 @@ partial class ExportReports
     private void InitializeComponent()
     {
         label1 = new Label();
-        choosereportrangePanel = new RoundedPanel();
+        choosereportrangePanel = new Panel();
         label4 = new Label();
         label6 = new Label();
-        fromPanel = new RoundedPanel();
+        fromPanel = new Panel();
         fromDarkDateTimePicker = new DarkDateTimePicker();
         label10 = new Label();
-        toPanel = new RoundedPanel();
+        toPanel = new Panel();
         toDarkDateTimePicker = new DarkDateTimePicker();
         label14 = new Label();
-        jukirPanel = new RoundedPanel();
+        jukirPanel = new Panel();
         jukirComboBox = new ComboBox();
         label18 = new Label();
-        parkingareaPanel = new RoundedPanel();
+        parkingareaPanel = new Panel();
         parkingareaComboBox = new ComboBox();
-        reportpreviewPanel = new RoundedPanel();
+        reportpreviewPanel = new Panel();
         label23 = new Label();
         grid24 = new DataGridView();
         column26 = new DataGridViewTextBoxColumn();
@@ -35,8 +35,8 @@ partial class ExportReports
         column28 = new DataGridViewTextBoxColumn();
         column29 = new DataGridViewTextBoxColumn();
         column30 = new DataGridViewTextBoxColumn();
-        generatePreviewButton = new RoundedButton();
-        exportFileButton = new RoundedButton();
+        generatePreviewButton = new Button();
+        exportFileButton = new Button();
         SuspendLayout();
         label1.Name = "label1";
         label1.Location = new Point(20, 7);
@@ -51,10 +51,10 @@ partial class ExportReports
         choosereportrangePanel.Location = new Point(20, 56);
         choosereportrangePanel.Size = new Size(807, 205);
         choosereportrangePanel.BackColor = AppTheme.CardBackground;
+        choosereportrangePanel.BorderStyle = BorderStyle.FixedSingle;
         choosereportrangePanel.ForeColor = AppTheme.Text;
         choosereportrangePanel.TabIndex = 2;
         choosereportrangePanel.Padding = Padding.Empty;
-        choosereportrangePanel.BorderColor = AppTheme.CardBorder;
         label4.Name = "label4";
         label4.Location = new Point(18, 16);
         label4.Size = new Size(771, 15);
@@ -77,6 +77,7 @@ partial class ExportReports
         fromPanel.Location = new Point(20, 71);
         fromPanel.Size = new Size(376, 38);
         fromPanel.BackColor = AppTheme.InputBackground;
+        fromPanel.BorderStyle = BorderStyle.FixedSingle;
         fromPanel.ForeColor = AppTheme.Text;
         fromPanel.TabIndex = 7;
         fromPanel.Padding = Padding.Empty;
@@ -103,6 +104,7 @@ partial class ExportReports
         toPanel.Location = new Point(412, 71);
         toPanel.Size = new Size(376, 38);
         toPanel.BackColor = AppTheme.InputBackground;
+        toPanel.BorderStyle = BorderStyle.FixedSingle;
         toPanel.ForeColor = AppTheme.Text;
         toPanel.TabIndex = 11;
         toPanel.Padding = Padding.Empty;
@@ -129,6 +131,7 @@ partial class ExportReports
         jukirPanel.Location = new Point(20, 148);
         jukirPanel.Size = new Size(376, 38);
         jukirPanel.BackColor = AppTheme.InputBackground;
+        jukirPanel.BorderStyle = BorderStyle.FixedSingle;
         jukirPanel.ForeColor = AppTheme.Text;
         jukirPanel.TabIndex = 15;
         jukirPanel.Padding = Padding.Empty;
@@ -155,6 +158,7 @@ partial class ExportReports
         parkingareaPanel.Location = new Point(412, 148);
         parkingareaPanel.Size = new Size(376, 38);
         parkingareaPanel.BackColor = AppTheme.InputBackground;
+        parkingareaPanel.BorderStyle = BorderStyle.FixedSingle;
         parkingareaPanel.ForeColor = AppTheme.Text;
         parkingareaPanel.TabIndex = 19;
         parkingareaPanel.Padding = Padding.Empty;
@@ -172,10 +176,10 @@ partial class ExportReports
         reportpreviewPanel.Location = new Point(20, 280);
         reportpreviewPanel.Size = new Size(807, 262);
         reportpreviewPanel.BackColor = AppTheme.CardBackground;
+        reportpreviewPanel.BorderStyle = BorderStyle.FixedSingle;
         reportpreviewPanel.ForeColor = AppTheme.Text;
         reportpreviewPanel.TabIndex = 21;
         reportpreviewPanel.Padding = Padding.Empty;
-        reportpreviewPanel.BorderColor = AppTheme.CardBorder;
         label23.Name = "label23";
         label23.Location = new Point(18, 16);
         label23.Size = new Size(771, 15);
@@ -209,10 +213,10 @@ partial class ExportReports
         column27.HeaderText = "Jukir";
         grid24.Columns.Add(column27);
         column28.Name = "column28";
-        column28.HeaderText = "Plate";
+        column28.HeaderText = "Area";
         grid24.Columns.Add(column28);
         column29.Name = "column29";
-        column29.HeaderText = "Vehicle type";
+        column29.HeaderText = "Plate";
         grid24.Columns.Add(column29);
         column30.Name = "column30";
         column30.HeaderText = "Fee";
@@ -221,6 +225,8 @@ partial class ExportReports
         generatePreviewButton.Location = new Point(20, 567);
         generatePreviewButton.Size = new Size(172, 36);
         generatePreviewButton.BackColor = AppTheme.ButtonSecondaryBackground;
+        generatePreviewButton.FlatStyle = FlatStyle.Flat;
+        generatePreviewButton.FlatAppearance.BorderSize = 0;
         generatePreviewButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         generatePreviewButton.TabIndex = 30;
         generatePreviewButton.Text = "Generate Preview";
@@ -230,6 +236,8 @@ partial class ExportReports
         exportFileButton.Location = new Point(679, 567);
         exportFileButton.Size = new Size(148, 36);
         exportFileButton.BackColor = AppTheme.ButtonPrimaryBackground;
+        exportFileButton.FlatStyle = FlatStyle.Flat;
+        exportFileButton.FlatAppearance.BorderSize = 0;
         exportFileButton.ForeColor = AppTheme.ButtonSecondaryForeground;
         exportFileButton.TabIndex = 31;
         exportFileButton.Text = "Export File";
@@ -262,33 +270,7 @@ partial class ExportReports
         Size = new Size(1050, 618);
         Name = "ExportReports";
         AutoScroll = true;
-        AutoScrollMinSize = new Size(850, 618);
-        responsiveLayout = new TableLayoutPanel();
-        responsiveLayout.Name = "responsiveLayout";
-        responsiveLayout.Dock = DockStyle.Top;
-        responsiveLayout.AutoSize = true;
-        responsiveLayout.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-        responsiveLayout.MinimumSize = new Size(850, 0);
-        responsiveLayout.Padding = new Padding(20, 8, 20, 20);
-        responsiveLayout.ColumnCount = 1;
-        responsiveLayout.RowCount = 4;
-        responsiveLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        label1.Margin = new Padding(0, 0, 0, 29);
-        label1.Height = 20;
-        label1.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(label1, 0, 0);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        choosereportrangePanel.Margin = new Padding(0, 0, 0, 19);
-        choosereportrangePanel.Height = 205;
-        choosereportrangePanel.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(choosereportrangePanel, 0, 1);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-        reportpreviewPanel.Margin = new Padding(0, 0, 0, 25);
-        reportpreviewPanel.Height = 262;
-        reportpreviewPanel.Dock = DockStyle.Top;
-        responsiveLayout.Controls.Add(reportpreviewPanel, 0, 2);
-        responsiveLayout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+        AutoScrollMinSize = new Size(850, 618);
         layoutRow3 = new TableLayoutPanel();
         layoutRow3.Dock = DockStyle.Top;
         layoutRow3.Height = 36;
@@ -297,14 +279,28 @@ partial class ExportReports
         layoutRow3.RowCount = 1;
         layoutRow3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
         layoutRow3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 53.7500F));
-        generatePreviewButton.Dock = DockStyle.Fill;
-        generatePreviewButton.Margin = new Padding(0, 0, 12, 0);
         layoutRow3.Controls.Add(generatePreviewButton, 0, 0);
         layoutRow3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.2500F));
-        exportFileButton.Dock = DockStyle.Fill;
-        exportFileButton.Margin = new Padding(0, 0, 0, 0);
         layoutRow3.Controls.Add(exportFileButton, 1, 0);
-        responsiveLayout.Controls.Add(layoutRow3, 0, 3);
+        responsiveLayout = new Panel();
+        responsiveLayout.Name = "responsiveLayout";
+        responsiveLayout.Dock = DockStyle.Top;
+        responsiveLayout.AutoSize = true;
+        responsiveLayout.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        responsiveLayout.MinimumSize = new Size(850, 0);
+        responsiveLayout.Padding = new Padding(20, 8, 20, 20);
+        label1.Margin = new Padding(0, 0, 0, 29);
+        label1.Height = 20;
+        label1.Dock = DockStyle.Top;
+        choosereportrangePanel.Dock = DockStyle.Top;
+        reportpreviewPanel.Dock = DockStyle.Top;
+        layoutRow3.Dock = DockStyle.Top;
+        responsiveLayout.Controls.Add(layoutRow3);
+        responsiveLayout.Controls.Add(reportpreviewPanel);
+        responsiveLayout.Controls.Add(choosereportrangePanel);
+        responsiveLayout.Controls.Add(label1);
+        generatePreviewButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        exportFileButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
         grid24.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         label23.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         parkingareaComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -322,21 +318,21 @@ partial class ExportReports
     }
     #endregion
     private Label label1 = null!;
-    private RoundedPanel choosereportrangePanel = null!;
+    private Panel choosereportrangePanel = null!;
     private Label label4 = null!;
     private Label label6 = null!;
-    private RoundedPanel fromPanel = null!;
+    private Panel fromPanel = null!;
     private DarkDateTimePicker fromDarkDateTimePicker = null!;
     private Label label10 = null!;
-    private RoundedPanel toPanel = null!;
+    private Panel toPanel = null!;
     private DarkDateTimePicker toDarkDateTimePicker = null!;
     private Label label14 = null!;
-    private RoundedPanel jukirPanel = null!;
+    private Panel jukirPanel = null!;
     private ComboBox jukirComboBox = null!;
     private Label label18 = null!;
-    private RoundedPanel parkingareaPanel = null!;
+    private Panel parkingareaPanel = null!;
     private ComboBox parkingareaComboBox = null!;
-    private RoundedPanel reportpreviewPanel = null!;
+    private Panel reportpreviewPanel = null!;
     private Label label23 = null!;
     private DataGridView grid24 = null!;
     private DataGridViewTextBoxColumn column26 = null!;
@@ -344,8 +340,8 @@ partial class ExportReports
     private DataGridViewTextBoxColumn column28 = null!;
     private DataGridViewTextBoxColumn column29 = null!;
     private DataGridViewTextBoxColumn column30 = null!;
-    private RoundedButton generatePreviewButton = null!;
-    private RoundedButton exportFileButton = null!;
-    private TableLayoutPanel responsiveLayout = null!;
+    private Button generatePreviewButton = null!;
+    private Button exportFileButton = null!;
+    private Panel responsiveLayout = null!;
     private TableLayoutPanel layoutRow3 = null!;
 }

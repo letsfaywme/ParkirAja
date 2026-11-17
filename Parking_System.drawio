@@ -369,7 +369,7 @@
         <mxCell id="W_Zr4OYncsgdRNlkMJd4-40" edge="1" parent="1" source="W_Zr4OYncsgdRNlkMJd4-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="W_Zr4OYncsgdRNlkMJd4-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="W_Zr4OYncsgdRNlkMJd4-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Show succsesful pop up message" vertex="1">
+        <mxCell id="W_Zr4OYncsgdRNlkMJd4-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Show successful pop up message" vertex="1">
           <mxGeometry height="60" width="172" x="901" y="940" as="geometry" />
         </mxCell>
         <mxCell id="W_Zr4OYncsgdRNlkMJd4-43" edge="1" parent="1" source="W_Zr4OYncsgdRNlkMJd4-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="W_Zr4OYncsgdRNlkMJd4-42">
@@ -546,7 +546,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Wl9oNP6Erv6zaZCvSiJo-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Show appropriatre message" vertex="1">
+        <mxCell id="Wl9oNP6Erv6zaZCvSiJo-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Show appropriate message" vertex="1">
           <mxGeometry height="60" width="130" x="2430" y="590" as="geometry" />
         </mxCell>
         <mxCell id="Wl9oNP6Erv6zaZCvSiJo-3" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
@@ -610,7 +610,7 @@
         <mxCell id="gjnTQKZdLJY6SixGIYpZ-20" edge="1" parent="1" source="gjnTQKZdLJY6SixGIYpZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="gjnTQKZdLJY6SixGIYpZ-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gjnTQKZdLJY6SixGIYpZ-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Open vehicle entry log page" vertex="1">
+        <mxCell id="gjnTQKZdLJY6SixGIYpZ-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Open vehicle exit log page" vertex="1">
           <mxGeometry height="60" width="172" x="-581" y="1590" as="geometry" />
         </mxCell>
         <mxCell id="gjnTQKZdLJY6SixGIYpZ-17" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
@@ -823,7 +823,7 @@
         <mxCell id="kCR8hT3aeInP_WvvE7-w-21" edge="1" parent="1" source="_V_IbDlXnsk2177Pr0vg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_V_IbDlXnsk2177Pr0vg-15" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_V_IbDlXnsk2177Pr0vg-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set the date, expected ammount, and change the verfication status to &quot;pending&quot;" vertex="1">
+        <mxCell id="_V_IbDlXnsk2177Pr0vg-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set the date, expected amount, and change the verification status to &quot;pending&quot;" vertex="1">
           <mxGeometry height="60" width="160" x="1050" y="2170" as="geometry" />
         </mxCell>
         <mxCell id="2ywtHaBQEZjLOnhAoDBv-42" edge="1" parent="1" source="_V_IbDlXnsk2177Pr0vg-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="kCR8hT3aeInP_WvvE7-w-23" value="">
@@ -873,7 +873,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="kCR8hT3aeInP_WvvE7-w-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Hands over pyhsical deposit" vertex="1">
+        <mxCell id="kCR8hT3aeInP_WvvE7-w-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Hands over physical deposit" vertex="1">
           <mxGeometry height="54" width="135" x="740" y="2370" as="geometry" />
         </mxCell>
         <mxCell id="kCR8hT3aeInP_WvvE7-w-26" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
@@ -945,7 +945,7 @@
         <mxCell id="8u315DgXD1w3xU4X7E4T-8" edge="1" parent="1" source="8u315DgXD1w3xU4X7E4T-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8u315DgXD1w3xU4X7E4T-5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8u315DgXD1w3xU4X7E4T-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Retrieve today parking&#39;s data" vertex="1">
+        <mxCell id="8u315DgXD1w3xU4X7E4T-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Retrieve today parking's data" vertex="1">
           <mxGeometry height="60" width="160" x="2400" y="1650" as="geometry" />
         </mxCell>
         <mxCell id="8u315DgXD1w3xU4X7E4T-9" edge="1" parent="1" source="8u315DgXD1w3xU4X7E4T-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8u315DgXD1w3xU4X7E4T-6" value="">
@@ -1201,7 +1201,7 @@
         <mxCell id="2ywtHaBQEZjLOnhAoDBv-41" edge="1" parent="1" source="2ywtHaBQEZjLOnhAoDBv-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2ywtHaBQEZjLOnhAoDBv-40" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2ywtHaBQEZjLOnhAoDBv-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set verification status to &quot;Needs attention&quot;" vertex="1">
+        <mxCell id="2ywtHaBQEZjLOnhAoDBv-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set verification status to &quot;need_review&quot; (Needs attention)" vertex="1">
           <mxGeometry height="58" width="152.5" x="110" y="3792" as="geometry" />
         </mxCell>
         <mxCell id="2ywtHaBQEZjLOnhAoDBv-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Show discrepancy warning message" vertex="1">
@@ -1780,7 +1780,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5irGTasov-s7oRFlcAlY-26" parent="1" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Is the parking spot&amp;nbsp; data already exist?" vertex="1">
+        <mxCell id="5irGTasov-s7oRFlcAlY-26" parent="1" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Is the username already taken?" vertex="1">
           <mxGeometry height="112" width="127.5" x="-141.25" y="5400" as="geometry" />
         </mxCell>
         <mxCell id="5irGTasov-s7oRFlcAlY-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Submit" vertex="1">
@@ -2058,7 +2058,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Atmy5IIxrTOgysl919_Y-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Open manage parking spot page" vertex="1">
+        <mxCell id="Atmy5IIxrTOgysl919_Y-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Open export report page" vertex="1">
           <mxGeometry height="61" width="130" x="2070" y="3440" as="geometry" />
         </mxCell>
         <mxCell id="IRl54tfwLzTgCMxTSCXl-3" edge="1" parent="1" source="Atmy5IIxrTOgysl919_Y-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="IRl54tfwLzTgCMxTSCXl-2">
@@ -2125,7 +2125,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="e07sk8azPOirJVeIXAqV-1" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="Parking Spots" vertex="1">
-          <mxGeometry height="180" width="290" x="260" y="220" as="geometry" />
+          <mxGeometry height="240" width="290" x="260" y="220" as="geometry" />
         </mxCell>
         <mxCell id="e07sk8azPOirJVeIXAqV-2" parent="e07sk8azPOirJVeIXAqV-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
           <mxGeometry height="30" width="290" y="30" as="geometry" />
@@ -2274,7 +2274,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="e07sk8azPOirJVeIXAqV-47" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="Parking Transaction" vertex="1">
-          <mxGeometry height="300" width="310" x="260" y="690" as="geometry" />
+          <mxGeometry height="360" width="310" x="260" y="690" as="geometry" />
         </mxCell>
         <mxCell id="e07sk8azPOirJVeIXAqV-48" parent="e07sk8azPOirJVeIXAqV-47" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
           <mxGeometry height="30" width="310" y="30" as="geometry" />
@@ -2336,7 +2336,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e07sk8azPOirJVeIXAqV-62" parent="e07sk8azPOirJVeIXAqV-60" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="vehicleType enum (&#39;motorcycle&#39;, &#39;car&#39;) NOT NULL" vertex="1">
+        <mxCell id="e07sk8azPOirJVeIXAqV-62" parent="e07sk8azPOirJVeIXAqV-60" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="vehicleType enum ('motorcycle', 'car') NOT NULL" vertex="1">
           <mxGeometry height="30" width="280" x="30" as="geometry">
             <mxRectangle height="30" width="280" as="alternateBounds" />
           </mxGeometry>
@@ -2388,7 +2388,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e07sk8azPOirJVeIXAqV-74" parent="e07sk8azPOirJVeIXAqV-72" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="status enum (&#39;active&#39;, &#39;completed&#39;) NOT NULL" vertex="1">
+        <mxCell id="e07sk8azPOirJVeIXAqV-74" parent="e07sk8azPOirJVeIXAqV-72" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="status enum ('active', 'completed') NOT NULL" vertex="1">
           <mxGeometry height="30" width="280" x="30" as="geometry">
             <mxRectangle height="30" width="280" as="alternateBounds" />
           </mxGeometry>
@@ -2495,7 +2495,7 @@
             <mxRectangle height="30" width="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e07sk8azPOirJVeIXAqV-100" parent="e07sk8azPOirJVeIXAqV-98" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="verificationStatus enum (&#39;pending&#39;, &#39;matched&#39;, &#39;need_review&#39;) NOT NULL" vertex="1">
+        <mxCell id="e07sk8azPOirJVeIXAqV-100" parent="e07sk8azPOirJVeIXAqV-98" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" value="verificationStatus enum ('pending', 'matched', 'need_review') NOT NULL" vertex="1">
           <mxGeometry height="30" width="400" x="30" as="geometry">
             <mxRectangle height="30" width="400" as="alternateBounds" />
           </mxGeometry>
@@ -2631,6 +2631,42 @@
             <mxPoint x="710" y="875" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="erd-spot-cap-row" parent="e07sk8azPOirJVeIXAqV-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=left;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="30" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-spot-cap-c1" parent="erd-spot-cap-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=0;align=center;verticalAlign=middle;spacingLeft=0;spacingRight=0;overflow=hidden;" value="" vertex="1">
+          <mxGeometry height="30" width="40" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-spot-cap-c2" parent="erd-spot-cap-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;overflow=hidden;" value="totalCapacity int NOT NULL" vertex="1">
+          <mxGeometry height="30" width="250" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-spot-act-row" parent="e07sk8azPOirJVeIXAqV-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=left;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="30" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-spot-act-c1" parent="erd-spot-act-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=0;align=center;verticalAlign=middle;spacingLeft=0;spacingRight=0;overflow=hidden;" value="" vertex="1">
+          <mxGeometry height="30" width="40" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-spot-act-c2" parent="erd-spot-act-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;overflow=hidden;" value="isActive boolean NOT NULL DEFAULT true" vertex="1">
+          <mxGeometry height="30" width="250" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-tx-exitjukir-row" parent="e07sk8azPOirJVeIXAqV-47" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=left;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="30" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-tx-exitjukir-c1" parent="erd-tx-exitjukir-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=0;align=center;verticalAlign=middle;spacingLeft=0;spacingRight=0;overflow=hidden;" value="FK" vertex="1">
+          <mxGeometry height="30" width="40" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-tx-exitjukir-c2" parent="erd-tx-exitjukir-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;overflow=hidden;" value="exitJukirId int" vertex="1">
+          <mxGeometry height="30" width="250" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-tx-rateentry-row" parent="e07sk8azPOirJVeIXAqV-47" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=left;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="30" width="290" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-tx-rateentry-c1" parent="erd-tx-rateentry-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=0;align=center;verticalAlign=middle;spacingLeft=0;spacingRight=0;overflow=hidden;" value="" vertex="1">
+          <mxGeometry height="30" width="40" as="geometry" />
+        </mxCell>
+        <mxCell id="erd-tx-rateentry-c2" parent="erd-tx-rateentry-row" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;overflow=hidden;" value="rateAtEntry numeric (12,2) NOT NULL" vertex="1">
+          <mxGeometry height="30" width="250" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -2642,16 +2678,16 @@
         <mxCell id="login" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="40" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="login-bar" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Sign In" vertex="1">
+        <mxCell id="login-bar" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Sign In" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="login-chrome0" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="login-chrome0" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="login-chrome1" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="login-chrome1" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="login-chrome2" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="login-chrome2" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="login-heading" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;" tooltip="Label" value="PARKING MONITORING" vertex="1">
@@ -2666,7 +2702,7 @@
         <mxCell id="login-pass-label" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Password" vertex="1">
           <mxGeometry height="22" width="420" x="240" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="login-pass" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="TextBox" value="••••••••" vertex="1">
+        <mxCell id="login-pass" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="TextBox" value="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" vertex="1">
           <mxGeometry height="32" width="420" x="240" y="308" as="geometry" />
         </mxCell>
         <mxCell id="login-signin" parent="login" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Sign In" vertex="1">
@@ -2675,16 +2711,16 @@
         <mxCell id="jd" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="980" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="jd-bar" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Jukir Dashboard" vertex="1">
+        <mxCell id="jd-bar" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Jukir Dashboard" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="jd-chrome0" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="jd-chrome0" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="jd-chrome1" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="jd-chrome1" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="jd-chrome2" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="jd-chrome2" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="jd-side" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -2732,7 +2768,7 @@
         <mxCell id="jd-grid" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="270" width="650" x="219" y="254" as="geometry" />
         </mxCell>
-        <mxCell id="jd-grid-selector0" parent="jd-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="jd-grid-selector0" parent="jd-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="jd-grid-r0c0" parent="jd-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Time" vertex="1">
@@ -2822,7 +2858,7 @@
         <mxCell id="jd-grid-r5c3" parent="jd-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="155.5" x="494.5" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="jd-grid-scroll" parent="jd-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="jd-grid-scroll" parent="jd-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="238" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="jd-refresh" parent="jd" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Refresh" vertex="1">
@@ -2831,16 +2867,16 @@
         <mxCell id="ad" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="1920" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="ad-bar" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Real-time Parking Dashboard" vertex="1">
+        <mxCell id="ad-bar" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Real-time Parking Dashboard" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="ad-chrome0" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="ad-chrome0" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="ad-chrome1" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="ad-chrome1" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="ad-chrome2" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="ad-chrome2" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="ad-side" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -2891,7 +2927,7 @@
         <mxCell id="ad-grid" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="270" width="650" x="219" y="254" as="geometry" />
         </mxCell>
-        <mxCell id="ad-grid-selector0" parent="ad-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="ad-grid-selector0" parent="ad-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="ad-grid-r0c0" parent="ad-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Area" vertex="1">
@@ -2999,7 +3035,7 @@
         <mxCell id="ad-grid-r5c4" parent="ad-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="124.4" x="525.6" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="ad-grid-scroll" parent="ad-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="ad-grid-scroll" parent="ad-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="238" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="ad-refresh" parent="ad" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Refresh" vertex="1">
@@ -3008,16 +3044,16 @@
         <mxCell id="entry" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="40" y="780" as="geometry" />
         </mxCell>
-        <mxCell id="entry-bar" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Vehicle Entry" vertex="1">
+        <mxCell id="entry-bar" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Vehicle Entry" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="entry-chrome0" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="entry-chrome0" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="entry-chrome1" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="entry-chrome1" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="entry-chrome2" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="entry-chrome2" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="entry-side" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -3059,13 +3095,13 @@
         <mxCell id="entry-type-label" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Vehicle Type" vertex="1">
           <mxGeometry height="22" width="280" x="219" y="190" as="geometry" />
         </mxCell>
-        <mxCell id="entry-type" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="Select type    ▾" vertex="1">
+        <mxCell id="entry-type" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="Select type    â–¾" vertex="1">
           <mxGeometry height="32" width="315" x="219" y="218" as="geometry" />
         </mxCell>
         <mxCell id="entry-area-label" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Parking Area" vertex="1">
           <mxGeometry height="22" width="280" x="554" y="190" as="geometry" />
         </mxCell>
-        <mxCell id="entry-area" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="Select area    ▾" vertex="1">
+        <mxCell id="entry-area" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="Select area    â–¾" vertex="1">
           <mxGeometry height="32" width="315" x="554" y="218" as="geometry" />
         </mxCell>
         <mxCell id="entry-save" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Save Entry" vertex="1">
@@ -3077,7 +3113,7 @@
         <mxCell id="entry-grid" parent="entry" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="240" width="650" x="219" y="336" as="geometry" />
         </mxCell>
-        <mxCell id="entry-grid-selector0" parent="entry-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="entry-grid-selector0" parent="entry-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="entry-grid-r0c0" parent="entry-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Time" vertex="1">
@@ -3185,22 +3221,22 @@
         <mxCell id="entry-grid-r5c4" parent="entry-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="124.4" x="525.6" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="entry-grid-scroll" parent="entry-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="entry-grid-scroll" parent="entry-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="208" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="exit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="980" y="780" as="geometry" />
         </mxCell>
-        <mxCell id="exit-bar" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Vehicle Exit" vertex="1">
+        <mxCell id="exit-bar" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Vehicle Exit" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="exit-chrome0" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="exit-chrome0" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="exit-chrome1" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="exit-chrome1" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="exit-chrome2" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="exit-chrome2" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="exit-side" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -3248,13 +3284,13 @@
         <mxCell id="exit-details-title" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Vehicle / Fee Details" vertex="1">
           <mxGeometry height="22" width="580" x="239" y="226" as="geometry" />
         </mxCell>
-        <mxCell id="exit-detail0" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Plate: —                    Type: —" vertex="1">
+        <mxCell id="exit-detail0" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Plate: â€”                    Type: â€”" vertex="1">
           <mxGeometry height="22" width="600" x="239" y="274" as="geometry" />
         </mxCell>
-        <mxCell id="exit-detail1" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Entry time: —            Area: —" vertex="1">
+        <mxCell id="exit-detail1" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Entry time: â€”            Area: â€”" vertex="1">
           <mxGeometry height="22" width="600" x="239" y="318" as="geometry" />
         </mxCell>
-        <mxCell id="exit-detail2" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Exit time: Current      Duration: —" vertex="1">
+        <mxCell id="exit-detail2" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Exit time: Current      Duration: â€”" vertex="1">
           <mxGeometry height="22" width="600" x="239" y="362" as="geometry" />
         </mxCell>
         <mxCell id="exit-detail3" parent="exit" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Parking fee: Rp 0" vertex="1">
@@ -3269,16 +3305,16 @@
         <mxCell id="history" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="1920" y="780" as="geometry" />
         </mxCell>
-        <mxCell id="history-bar" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Daily Transaction History" vertex="1">
+        <mxCell id="history-bar" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Daily Transaction History" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="history-chrome0" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="history-chrome0" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="history-chrome1" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="history-chrome1" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="history-chrome2" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="history-chrome2" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="history-side" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -3314,13 +3350,13 @@
         <mxCell id="history-date-label" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Date" vertex="1">
           <mxGeometry height="22" width="280" x="219" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="history-date" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    ▾" vertex="1">
+        <mxCell id="history-date" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    â–¾" vertex="1">
           <mxGeometry height="32" width="190" x="219" y="140" as="geometry" />
         </mxCell>
         <mxCell id="history-type-label" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Vehicle Type" vertex="1">
           <mxGeometry height="22" width="180" x="425" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="history-type" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All types    ▾" vertex="1">
+        <mxCell id="history-type" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All types    â–¾" vertex="1">
           <mxGeometry height="32" width="180" x="425" y="140" as="geometry" />
         </mxCell>
         <mxCell id="history-plate-label" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Plate Number" vertex="1">
@@ -3335,7 +3371,7 @@
         <mxCell id="history-grid" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="270" width="650" x="219" y="254" as="geometry" />
         </mxCell>
-        <mxCell id="history-grid-selector0" parent="history-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="history-grid-selector0" parent="history-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="history-grid-r0c0" parent="history-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Time In" vertex="1">
@@ -3461,7 +3497,7 @@
         <mxCell id="history-grid-r5c5" parent="history-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="103.66666666666667" x="546.3333333333334" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="history-grid-scroll" parent="history-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="history-grid-scroll" parent="history-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="238" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="history-export" parent="history" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Export" vertex="1">
@@ -3479,16 +3515,16 @@
         <mxCell id="report" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="40" y="1480" as="geometry" />
         </mxCell>
-        <mxCell id="report-bar" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Daily Report" vertex="1">
+        <mxCell id="report-bar" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Daily Report" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="report-chrome0" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="report-chrome0" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="report-chrome1" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="report-chrome1" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="report-chrome2" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="report-chrome2" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="report-side" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -3524,7 +3560,7 @@
         <mxCell id="report-date-label" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Report Date" vertex="1">
           <mxGeometry height="22" width="280" x="219" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="report-date" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    ▾" vertex="1">
+        <mxCell id="report-date" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    â–¾" vertex="1">
           <mxGeometry height="32" width="220" x="219" y="140" as="geometry" />
         </mxCell>
         <mxCell id="report-show" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Show Report" vertex="1">
@@ -3536,7 +3572,7 @@
         <mxCell id="report-grid" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="228" width="650" x="219" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="report-grid-selector0" parent="report-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="report-grid-selector0" parent="report-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="report-grid-r0c0" parent="report-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Vehicle Type" vertex="1">
@@ -3608,7 +3644,7 @@
         <mxCell id="report-grid-r5c2" parent="report-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="207.33333333333334" x="442.6666666666667" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="report-grid-scroll" parent="report-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="report-grid-scroll" parent="report-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="196" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="report-export" parent="report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Export Report" vertex="1">
@@ -3620,16 +3656,16 @@
         <mxCell id="validation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="980" y="1480" as="geometry" />
         </mxCell>
-        <mxCell id="validation-bar" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Validate Jukir Reports" vertex="1">
+        <mxCell id="validation-bar" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Validate Jukir Reports" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="validation-chrome0" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="validation-chrome0" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="validation-chrome1" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="validation-chrome1" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="validation-chrome2" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="validation-chrome2" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="validation-side" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -3665,13 +3701,13 @@
         <mxCell id="validation-date-label" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Report Date" vertex="1">
           <mxGeometry height="22" width="280" x="219" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="validation-date" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    ▾" vertex="1">
+        <mxCell id="validation-date" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    â–¾" vertex="1">
           <mxGeometry height="32" width="220" x="219" y="140" as="geometry" />
         </mxCell>
         <mxCell id="validation-status-label" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Status" vertex="1">
           <mxGeometry height="22" width="280" x="455" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="validation-status" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All    ▾" vertex="1">
+        <mxCell id="validation-status" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All    â–¾" vertex="1">
           <mxGeometry height="32" width="220" x="455" y="140" as="geometry" />
         </mxCell>
         <mxCell id="validation-search" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Search" vertex="1">
@@ -3680,7 +3716,7 @@
         <mxCell id="validation-grid" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="240" width="650" x="219" y="208" as="geometry" />
         </mxCell>
-        <mxCell id="validation-grid-selector0" parent="validation-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="validation-grid-selector0" parent="validation-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="validation-grid-r0c0" parent="validation-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Jukir" vertex="1">
@@ -3788,7 +3824,7 @@
         <mxCell id="validation-grid-r5c4" parent="validation-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="124.4" x="525.6" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="validation-grid-scroll" parent="validation-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="validation-grid-scroll" parent="validation-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="208" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="validation-note-label" parent="validation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Review note" vertex="1">
@@ -3806,16 +3842,16 @@
         <mxCell id="parking" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;fillStyle=auto;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="1920" y="1480" as="geometry" />
         </mxCell>
-        <mxCell id="parking-bar" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Manage Parking Areas" vertex="1">
+        <mxCell id="parking-bar" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Manage Parking Areas" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="parking-chrome0" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="parking-chrome0" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="parking-chrome1" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="parking-chrome1" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="parking-chrome2" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="parking-chrome2" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="parking-side" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="&lt;div&gt;&lt;/div&gt;" vertex="1">
@@ -3851,7 +3887,7 @@
         <mxCell id="parking-grid" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="240" width="650" x="219" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="parking-grid-selector0" parent="parking-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="parking-grid-selector0" parent="parking-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="parking-grid-r0c0" parent="parking-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Area" vertex="1">
@@ -3959,7 +3995,7 @@
         <mxCell id="parking-grid-r5c4" parent="parking-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="124.4" x="525.6" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="parking-grid-scroll" parent="parking-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="parking-grid-scroll" parent="parking-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="208" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="parking-name-label" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Area Name" vertex="1">
@@ -3971,7 +4007,7 @@
         <mxCell id="parking-capacity-label" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Capacity" vertex="1">
           <mxGeometry height="22" width="210" x="659" y="378" as="geometry" />
         </mxCell>
-        <mxCell id="parking-capacity" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="NumericUpDown" value="0                ▴ ▾" vertex="1">
+        <mxCell id="parking-capacity" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="NumericUpDown" value="0                â–´ â–¾" vertex="1">
           <mxGeometry height="32" width="210" x="659" y="406" as="geometry" />
         </mxCell>
         <mxCell id="parking-add" parent="parking" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Add" vertex="1">
@@ -3989,16 +4025,16 @@
         <mxCell id="jukir" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="40" y="2180" as="geometry" />
         </mxCell>
-        <mxCell id="jukir-bar" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Manage Jukir Accounts" vertex="1">
+        <mxCell id="jukir-bar" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Manage Jukir Accounts" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="jukir-chrome0" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="jukir-chrome0" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="jukir-chrome1" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="jukir-chrome1" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="jukir-chrome2" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="jukir-chrome2" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="jukir-side" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -4034,7 +4070,7 @@
         <mxCell id="jukir-grid" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="240" width="650" x="219" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="jukir-grid-selector0" parent="jukir-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="jukir-grid-selector0" parent="jukir-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="jukir-grid-r0c0" parent="jukir-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Name" vertex="1">
@@ -4124,7 +4160,7 @@
         <mxCell id="jukir-grid-r5c3" parent="jukir-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="155.5" x="494.5" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="jukir-grid-scroll" parent="jukir-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="jukir-grid-scroll" parent="jukir-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="208" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="jukir-name-label" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Jukir Name" vertex="1">
@@ -4142,7 +4178,7 @@
         <mxCell id="jukir-area-label" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Assigned Area" vertex="1">
           <mxGeometry height="22" width="280" x="219" y="454" as="geometry" />
         </mxCell>
-        <mxCell id="jukir-area" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="Select area    ▾" vertex="1">
+        <mxCell id="jukir-area" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="Select area    â–¾" vertex="1">
           <mxGeometry height="32" width="315" x="219" y="482" as="geometry" />
         </mxCell>
         <mxCell id="jukir-add" parent="jukir" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Add" vertex="1">
@@ -4157,16 +4193,16 @@
         <mxCell id="export" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="Form" value="" vertex="1">
           <mxGeometry height="650" width="900" x="980" y="2180" as="geometry" />
         </mxCell>
-        <mxCell id="export-bar" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring — Export Reports" vertex="1">
+        <mxCell id="export-bar" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontStyle=1;" tooltip="TitleBar" value="Parking Monitoring â€” Export Reports" vertex="1">
           <mxGeometry height="36" width="762" as="geometry" />
         </mxCell>
-        <mxCell id="export-chrome0" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="—" vertex="1">
+        <mxCell id="export-chrome0" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â€”" vertex="1">
           <mxGeometry height="36" width="46" x="762" as="geometry" />
         </mxCell>
-        <mxCell id="export-chrome1" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="□" vertex="1">
+        <mxCell id="export-chrome1" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="â–¡" vertex="1">
           <mxGeometry height="36" width="46" x="808" as="geometry" />
         </mxCell>
-        <mxCell id="export-chrome2" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="×" vertex="1">
+        <mxCell id="export-chrome2" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Ã—" vertex="1">
           <mxGeometry height="36" width="46" x="854" as="geometry" />
         </mxCell>
         <mxCell id="export-side" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="Panel" value="" vertex="1">
@@ -4202,31 +4238,31 @@
         <mxCell id="export-from-label" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="From" vertex="1">
           <mxGeometry height="22" width="280" x="219" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="export-from" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    ▾" vertex="1">
+        <mxCell id="export-from" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/01/2026    â–¾" vertex="1">
           <mxGeometry height="32" width="315" x="219" y="140" as="geometry" />
         </mxCell>
         <mxCell id="export-to-label" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="To" vertex="1">
           <mxGeometry height="22" width="280" x="554" y="112" as="geometry" />
         </mxCell>
-        <mxCell id="export-to" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/31/2026    ▾" vertex="1">
+        <mxCell id="export-to" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="DateTimePicker" value="01/31/2026    â–¾" vertex="1">
           <mxGeometry height="32" width="315" x="554" y="140" as="geometry" />
         </mxCell>
         <mxCell id="export-jukir-label" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Jukir" vertex="1">
           <mxGeometry height="22" width="280" x="219" y="194" as="geometry" />
         </mxCell>
-        <mxCell id="export-jukir" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All    ▾" vertex="1">
+        <mxCell id="export-jukir" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All    â–¾" vertex="1">
           <mxGeometry height="32" width="315" x="219" y="222" as="geometry" />
         </mxCell>
         <mxCell id="export-area-label" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;spacingLeft=0;fontColor=light-dark(#E6E6E6, #ffffff);fillColor=none;strokeColor=none;" tooltip="Label" value="Area" vertex="1">
           <mxGeometry height="22" width="280" x="554" y="194" as="geometry" />
         </mxCell>
-        <mxCell id="export-area" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All    ▾" vertex="1">
+        <mxCell id="export-area" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;" tooltip="ComboBox" value="All    â–¾" vertex="1">
           <mxGeometry height="32" width="315" x="554" y="222" as="geometry" />
         </mxCell>
         <mxCell id="export-grid" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;container=1;collapsible=0;" tooltip="DataGridView" value="" vertex="1">
           <mxGeometry height="228" width="650" x="219" y="286" as="geometry" />
         </mxCell>
-        <mxCell id="export-grid-selector0" parent="export-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="▸" vertex="1">
+        <mxCell id="export-grid-selector0" parent="export-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Header" value="â–¸" vertex="1">
           <mxGeometry height="32" width="28" as="geometry" />
         </mxCell>
         <mxCell id="export-grid-r0c0" parent="export-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;fontStyle=1;" tooltip="Header" value="Date" vertex="1">
@@ -4334,7 +4370,7 @@
         <mxCell id="export-grid-r5c4" parent="export-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;spacingLeft=6;" tooltip="GridCell" value="" vertex="1">
           <mxGeometry height="32" width="124.4" x="525.6" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="export-grid-scroll" parent="export-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="▾" vertex="1">
+        <mxCell id="export-grid-scroll" parent="export-grid" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Panel" value="â–¾" vertex="1">
           <mxGeometry height="196" width="14" x="636" y="32" as="geometry" />
         </mxCell>
         <mxCell id="export-preview" parent="export" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Segoe UI;fontSize=14;align=left;verticalAlign=middle;spacingLeft=10;align=center;spacingLeft=0;" tooltip="Button" value="Generate Preview" vertex="1">

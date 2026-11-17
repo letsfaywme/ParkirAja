@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <NoWarn>$(NoWarn);CA1707;CA1305;CA1304;CA1311;CA1862;CA1725;CA1852;CA2241</NoWarn>
+  </PropertyGroup>
+</Project>

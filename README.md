@@ -34,10 +34,18 @@ dotnet build ParkingSystem.slnx
 dotnet run --project ParkingSystem/ParkingSystem.csproj
 ```
 
+### Menjalankan Pengujian Otomatis (xUnit)
+```powershell
+cd ParkingSystem
+dotnet test ParkingSystem.slnx
+```
+
 ### Navigasi & Tampilan
 - **Form Login**:
-  - Ketik username apa saja lalu klik **Sign In** untuk membuka workspace **Jukir** (Petugas Parkir).
-  - Ketik username yang mengandung kata `admin` (misal: `admin`) lalu klik **Sign In** untuk membuka workspace **Admin**.
+  - Akun Admin: Username `admin`, Password `adminpassword` (Membuka workspace Admin).
+  - Akun Jukir 1: Username `jukir1`, Password `jukirpassword` (Area Parkir Utama).
+  - Akun Jukir 2: Username `jukir2`, Password `jukirpassword` (Area Parkir Timur).
+  - Kata sandi diamankan secara kriptografis menggunakan algoritma hashing PBKDF2 (HMAC-SHA256 bergaram 16-byte).
 - **Admin Pages**:
   - `AdminDashboard` (Ringkasan statistik)
   - `ReportValidation` (Validasi setoran jukir)
@@ -50,3 +58,13 @@ dotnet run --project ParkingSystem/ParkingSystem.csproj
   - `VehicleExit` (Pencarian & pembayaran kendaraan keluar)
   - `TransactionHistory` (Riwayat transaksi)
   - `DailyReport` (Laporan & pengajuan setoran harian)
+
+---
+
+## Multi-Agent AI Development Ecosystem
+Proyek ini dikembangkan dengan tata kelola multi-agent AI berbasis 9 peran terspesialisasi (Orchestrator, Product Analyst, System Architect, UI/UX Designer, Software Developer, QA Engineer, Security Engineer, DevOps Engineer, Technical Writer).
+
+Panduan lengkap topologi, batasan wewenang (*boundary policies*), dan protokol jabat tangan (*cross-agent handshake*) dapat dilihat pada:
+- **[Agent Skills Ecosystem & Governance Guide](docs/AGENT_SKILLS_ECOSYSTEM.md)**
+- **[Laporan Audit Kualitas & Remediasi Multi-Agent](docs/PROJECT_VERIFICATION_AUDIT.md)**
+- **Spesifikasi & Diagram Arsitektur**: `Parking_System.drawio` (Use Case, Activity Diagram, ERD, dan Wireframes)

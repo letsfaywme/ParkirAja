@@ -4,6 +4,7 @@ public class DarkDateTimePicker : DateTimePicker
 {
     public DarkDateTimePicker()
     {
+        SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         BackColor = AppTheme.InputBackground;
         ForeColor = AppTheme.Text;
         CalendarMonthBackground = AppTheme.CardBackground;
@@ -12,6 +13,12 @@ public class DarkDateTimePicker : DateTimePicker
 
     protected override void WndProc(ref Message m)
     {
+        if (m.Msg == 0x0014) // WM_ERASEBKGND
+        {
+            m.Result = (IntPtr)1;
+            return;
+        }
+
         base.WndProc(ref m);
         if (m.Msg is not (0x000F or 0x0318) || !IsHandleCreated) return;
         // Keep native calendar/keyboard behavior, including Designer bitmap rendering.
