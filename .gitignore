@@ -22,6 +22,9 @@ skills-lock.json
 __pycache__/
 *.pyc
 
+## Local secrets
+.env
+
 ## Local designer backups (temporary, never committed)
 _bak2/
 _backup_login/

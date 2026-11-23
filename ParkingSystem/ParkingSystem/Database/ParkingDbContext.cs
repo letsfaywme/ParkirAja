@@ -1,20 +1,37 @@
 using ParkingSystem.Security;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ParkingSystem.Database;
 
 /// <summary>
 /// Entity Framework Core DbContext untuk sistem parkir.
-/// Mengelola schema, relasi tabel, dan manipulasi data in-memory database.
-/// Dirancang siap bermigrasi ke database fisik (PostgreSQL / SQL Server) dengan hanya mengganti provider options.
+/// Memetakan entitas ke PostgreSQL (Npgsql) dan mengisi data awal (seed).
+/// Seluruh kolom <see cref="DateTimeOffset"/> disimpan sebagai UTC lalu dibaca kembali
+/// dalam zona waktu WIB (UTC+7) agar tampilan antarmuka konsisten.
 /// </summary>
 public class ParkingDbContext : DbContext
 {
+    /// <summary>Offset zona waktu Indonesia Barat (WIB, UTC+7).</summary>
+    public static readonly TimeSpan WibOffset = TimeSpan.FromHours(7);
+
+    /// <summary>
+    /// Konverter kolom waktu: tulis sebagai UTC (syarat Npgsql untuk <c>timestamptz</c>),
+    /// baca kembali sebagai WIB agar seluruh tampilan UI memakai waktu lokal.
+    /// </summary>
+    private static readonly ValueConverter<DateTimeOffset, DateTimeOffset> WibConverter =
+        new(v => v.ToUniversalTime(), v => v.ToOffset(WibOffset));
+
+    /// <summary>Varian nullable dari <see cref="WibConverter"/> untuk kolom waktu opsional.</summary>
+    private static readonly ValueConverter<DateTimeOffset?, DateTimeOffset?> NullableWibConverter =
+        new(v => v == null ? null : v.Value.ToUniversalTime(),
+            v => v == null ? null : v.Value.ToOffset(WibOffset));
+
     private static ParkingDbContext? _instance;
     private static readonly object _lock = new();
 
     /// <summary>
-    /// Singleton instance DbContext untuk memastikan seluruh form berbagi data state in-memory yang sama.
+    /// Singleton instance DbContext agar seluruh form berbagi satu koneksi state aplikasi.
     /// </summary>
     public static ParkingDbContext Instance
     {
@@ -27,14 +44,27 @@ public class ParkingDbContext : DbContext
                     if (_instance == null)
                     {
                         var options = new DbContextOptionsBuilder<ParkingDbContext>()
-                            .UseInMemoryDatabase(databaseName: "ParkingSystemDb")
+                            .UseNpgsql(DatabaseSettings.GetConnectionString())
                             .Options;
-                        _instance = new ParkingDbContext(options);
-                        _instance.Database.EnsureCreated(); // Memicu OnModelCreating dan seeding data
+                        var created = new ParkingDbContext(options);
+                        DatabaseInitializer.EnsureSchema(created);
+                        _instance = created;
                     }
                 }
             }
             return _instance;
+        }
+    }
+
+    /// <summary>
+    /// Mengganti singleton dengan konteks terisolasi untuk pengujian, sehingga test tidak
+    /// menyentuh database PostgreSQL pengembangan.
+    /// </summary>
+    internal static void UseInstanceForTests(ParkingDbContext db)
+    {
+        lock (_lock)
+        {
+            _instance = db;
         }
     }
 
@@ -103,6 +133,8 @@ public class ParkingDbContext : DbContext
             entity.Property(e => e.RateAtEntry).HasPrecision(12, 2);
             entity.Property(e => e.Fare).HasPrecision(12, 2);
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20);
+            entity.Property(e => e.EntryTime).HasConversion(WibConverter);
+            entity.Property(e => e.ExitTime).HasConversion(NullableWibConverter);
 
             entity.HasOne(e => e.ParkingSpot)
                 .WithMany(s => s.Transactions)
@@ -130,6 +162,7 @@ public class ParkingDbContext : DbContext
             entity.Property(e => e.DepositedAmount).HasPrecision(12, 2);
             entity.Property(e => e.Status).HasConversion<string>().HasMaxLength(20);
             entity.Property(e => e.Notes).HasMaxLength(500);
+            entity.Property(e => e.ValidatedAt).HasConversion(NullableWibConverter);
 
             entity.HasOne(e => e.Jukir)
                 .WithMany(u => u.Deposits)

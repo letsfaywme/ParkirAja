@@ -29,7 +29,20 @@ internal static class Program
         {
             var factory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<ParkingDbContext>>();
             using var db = factory.CreateDbContext();
-            db.Database.EnsureCreated();
+
+            try
+            {
+                DatabaseInitializer.EnsureSchema(db);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"Aplikasi tidak dapat menyiapkan database.\n\n{ex.Message}",
+                    "Koneksi Database Gagal",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
         }
 
         Application.Run(new Login());
@@ -42,7 +55,7 @@ internal static class Program
     {
         services.AddDbContextFactory<ParkingDbContext>(options =>
         {
-            options.UseInMemoryDatabase("ParkingSystemDb");
+            options.UseNpgsql(DatabaseSettings.GetConnectionString());
         });
 
         services.AddSingleton<IParkingService, ParkingService>();

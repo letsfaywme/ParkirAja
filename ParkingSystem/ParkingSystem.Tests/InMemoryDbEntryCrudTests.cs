@@ -1,11 +1,36 @@
 using FluentAssertions;
+using Microsoft.EntityFrameworkCore;
 using ParkingSystem.Database;
 using Xunit;
 
 namespace ParkingSystem.Tests;
 
-public class InMemoryDbEntryCrudTests
+/// <summary>
+/// Pengujian CRUD tiket pada fasad <see cref="InMemoryDb"/>.
+/// Setiap test memasang DbContext EF Core InMemory yang terisolasi sehingga
+/// tidak menyentuh database PostgreSQL pengembangan.
+/// </summary>
+public class InMemoryDbEntryCrudTests : IDisposable
 {
+    private readonly ParkingDbContext _db;
+
+    public InMemoryDbEntryCrudTests()
+    {
+        var options = new DbContextOptionsBuilder<ParkingDbContext>()
+            .UseInMemoryDatabase("CrudTest_" + Guid.NewGuid())
+            .Options;
+
+        _db = new ParkingDbContext(options);
+        _db.Database.EnsureCreated();
+        ParkingDbContext.UseInstanceForTests(_db);
+    }
+
+    public void Dispose()
+    {
+        _db.Dispose();
+        GC.SuppressFinalize(this);
+    }
+
     [Fact]
     public void UpdateEntry_ChangesPlateAndRate()
     {
