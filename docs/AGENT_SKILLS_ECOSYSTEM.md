@@ -49,7 +49,7 @@ Ekosistem SDLC ParkirAja didukung oleh 9 peran agen terspesialisasi dengan keter
 | **5. Software Developer** | `dotnet-best-practices`, `dotnet-backend-patterns`, `csharp-async`, `test-driven-development`, `csharp-refactoring` | Mengimplementasikan service layer, repository pattern, async/await non-blocking UI thread, dan business logic parkir. |
 | **6. QA Engineer** | `csharp-xunit`, `test-anti-patterns`, `run-tests`, `verification-before-completion` | Menyusun unit test xUnit, regression test, audit anti-mocking & anti-tautologi test, eksekusi test runner CLI. |
 | **7. Security Engineer** | `security-and-hardening`, `email-and-password-best-practices`, `getsentry/security-review` | Audit hashing kredensial (PBKDF2/Argon2), mitigasi SQL injection pada PostgreSQL, proteksi brute force dan session management. |
-| **8. DevOps Engineer** | `github-actions-templates`, `directory-build-organization` | Menyiapkan CI/CD workflow GitHub Actions untuk build dan test .NET, sentralisasi dependency versi via Central Package Management (CPM). |
+| **8. DevOps Engineer** | `directory-build-organization` | Sentralisasi dependency versi via Central Package Management (CPM), konfigurasi build MSBuild (`Directory.Build.props`), dan penyiapan environment lokal. |
 | **9. Technical Writer** | `technical-writing`, `create-readme`, `csharp-docs` | Dokumentasi arsitektur di README, standardisasi XML Documentation comments pada public API/service C#, penulisan SOP operasional. |
 
 ---
@@ -151,7 +151,6 @@ C:\Users\fayak\.agents\skills\
 ├── drawio/                            # Integrasi diagram draw.io XML
 ├── email-and-password-best-practices/ # Hashing PBKDF2/Argon2 & auth hardening
 ├── find-skills/                       # Tool penemuan agent skills
-├── github-actions-templates/          # Template CI/CD GitHub Actions
 ├── optimizing-ef-core-queries/        # Optimasi EF Core & mitigasi query issue
 ├── ponytail/                          # Minimal change & anti-overengineering
 ├── postgresql-table-design/           # Skema & indexing PostgreSQL
