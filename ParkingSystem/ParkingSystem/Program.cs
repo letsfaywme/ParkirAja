@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ParkingSystem.Database;
-using ParkingSystem.Services;
 
 namespace ParkingSystem;
 
@@ -58,7 +57,6 @@ internal static class Program
             options.UseNpgsql(DatabaseSettings.GetConnectionString());
         });
 
-        services.AddSingleton<IParkingService, ParkingService>();
         services.AddTransient<Login>();
         services.AddTransient<MainForm>();
     }

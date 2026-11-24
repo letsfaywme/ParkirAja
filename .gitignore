@@ -25,10 +25,6 @@ __pycache__/
 ## Local secrets
 .env
 
-## Local designer backups (temporary, never committed)
-_bak2/
-_backup_login/
-
 ## OS generated files
 .DS_Store
 Thumbs.db

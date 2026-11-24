@@ -1,70 +1,156 @@
-# ParkirAja — Desktop UI (Windows Forms)
+# ParkirAja — Parking System (.NET 10 / Windows Forms)
 
-Sistem aplikasi desktop manajemen parkir berbasis Windows Forms (.NET 10).
+Sistem aplikasi desktop manajemen parkir berbasis Windows Forms (.NET 10) dengan
+Entity Framework Core dan database **PostgreSQL**.
 
-## Struktur Branch
-
-Repository ini memiliki dua branch utama:
-
-1. **`master`** (Branch saat ini):
-   - **Template UI & Struktur Kode Bersih**: Berisi seluruh desain antarmuka (UI/Forms), layout responsif, komponen custom (`RoundedControls`, `DarkDateTimePicker`, `AppTheme`), dan navigasi halaman.
-   - **Tanpa Logic & Tanpa Database**: Seluruh dependency database dan query SQL telah dilepas agar Anda dapat langsung fokus menuliskan business logic, state management, dan integrasi database secara manual.
-   - Setiap view (`Views/`) telah dilengkapi *event handler stub* dengan komentar `// TODO:` yang terstruktur rapi.
-
-2. **`vibe`**:
-   - **Full Source Code**: Berisi implementasi utuh dari sistem parkir ParkirAja, termasuk koneksi database PostgreSQL, hashing password PBKDF2, service layer (`ParkingService`), cetak struk GDI, ekspor PDF, serta suite validasi otomatis (`ParkingSystem.Checks`).
+Fokus implementasi: **modul Vehicle Entry** (pencatatan kendaraan masuk).
+Halaman lain dipertahankan sebagai tampilan (desain utuh) tanpa logic data.
 
 ---
 
-## Memulai di Branch `master`
+## Struktur Repository
 
-### Prasyarat
+```
+Parking System/
+├─ README.md
+├─ Parking_System.drawio          # Use Case, Activity Diagram, ERD, Wireframe
+├─ docs/
+│  ├─ POSTGRES_NAVICAT_RUNBOOK.md # Panduan database + Navicat
+│  └─ AGENT_SKILLS_ECOSYSTEM.md   # Tata kelola pengembangan multi-agent
+└─ ParkingSystem/
+   ├─ ParkingSystem.slnx
+   ├─ .env.example                # Template konfigurasi database
+   ├─ Directory.Build.props
+   ├─ Directory.Packages.props
+   ├─ ParkingSystem/              # Aplikasi utama
+   │  ├─ Program.cs               # Entry point + DI
+   │  ├─ ISessionAware.cs
+   │  ├─ Controls/                # Komponen UI kustom
+   │  ├─ Database/                # DbContext, settings, repositori
+   │  ├─ Models/                  # Entitas bisnis
+   │  ├─ Security/                # PBKDF2 password hasher
+   │  ├─ Theme/                   # Palet warna aplikasi
+   │  └─ Views/                   # Halaman UI (UserControl/Form)
+   └─ ParkingSystem.Tests/        # xUnit test suite
+```
+
+---
+
+## Prasyarat
+
 - [.NET 10.0 SDK](https://dotnet.microsoft.com/)
-- Visual Studio 2022 / 2026 atau VS Code dengan C# Dev Kit
+- Windows (Windows Forms Desktop Runtime)
+- PostgreSQL 16+ yang berjalan
+- Visual Studio 2022/2026 atau VS Code dengan C# Dev Kit
 
-### Menjalankan Project
+---
+
+## Konfigurasi Database
+
+Buat berkas `.env` di folder `ParkingSystem/ParkingSystem/` (sebelah `ParkingSystem.csproj`):
+
+```ini
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=parkiraja
+DB_USER=postgres
+DB_PASSWORD=postgres
+```
+
+Atau satu connection string utuh:
+
+```ini
+DB_CONNECTION_STRING=Host=localhost;Port=5432;Database=parkiraja;Username=postgres;Password=postgres
+```
+
+Berkas `.env` **tidak di-commit** (sudah masuk `.gitignore`).
+Template tersedia di `ParkingSystem/.env.example`.
+
+Tabel dan data awal dibuat otomatis saat aplikasi pertama kali dijalankan.
+
+Panduan lengkap (termasuk Navicat dan troubleshooting): **[docs/POSTGRES_NAVICAT_RUNBOOK.md](docs/POSTGRES_NAVICAT_RUNBOOK.md)**
+
+---
+
+## Menjalankan Aplikasi
+
 ```powershell
-# Masuk ke folder ParkingSystem
 cd ParkingSystem
 
-# Build solution
 dotnet build ParkingSystem.slnx
-
-# Jalankan aplikasi
 dotnet run --project ParkingSystem/ParkingSystem.csproj
 ```
 
-### Menjalankan Pengujian Otomatis (xUnit)
+## Menjalankan Pengujian
+
 ```powershell
 cd ParkingSystem
 dotnet test ParkingSystem.slnx
 ```
 
-### Navigasi & Tampilan
-- **Form Login**:
-  - Akun Admin: Username `admin`, Password `adminpassword` (Membuka workspace Admin).
-  - Akun Jukir 1: Username `jukir1`, Password `jukirpassword` (Area Parkir Utama).
-  - Akun Jukir 2: Username `jukir2`, Password `jukirpassword` (Area Parkir Timur).
-  - Kata sandi diamankan secara kriptografis menggunakan algoritma hashing PBKDF2 (HMAC-SHA256 bergaram 16-byte).
-- **Admin Pages**:
-  - `AdminDashboard` (Ringkasan statistik)
-  - `ReportValidation` (Validasi setoran jukir)
-  - `ParkingAreas` (Manajemen area & kapasitas parkir)
-  - `JukirAccounts` (Manajemen akun petugas jukir)
-  - `ExportReports` (Ekspor laporan berkala)
-- **Jukir Pages**:
-  - `JukirDashboard` (Statistik harian jukir)
-  - `VehicleEntry` (Input kendaraan masuk)
-  - `VehicleExit` (Pencarian & pembayaran kendaraan keluar)
-  - `TransactionHistory` (Riwayat transaksi)
-  - `DailyReport` (Laporan & pengajuan setoran harian)
+---
+
+## Akun Demo
+
+| Peran | Username | Password | Area |
+|---|---|---|---|
+| Admin | `admin` | `adminpassword` | Pusat |
+| Jukir 1 | `jukir1` | `jukirpassword` | Area Parkir Utama |
+| Jukir 2 | `jukir2` | `jukirpassword` | Area Parkir Timur |
+
+Kata sandi disimpan sebagai hash **PBKDF2** (HMAC-SHA256, 100.000 iterasi, salt 16 byte),
+bukan teks biasa. Lihat `Security/PasswordHasher.cs`.
 
 ---
 
-## Multi-Agent AI Development Ecosystem
-Proyek ini dikembangkan dengan tata kelola multi-agent AI berbasis 9 peran terspesialisasi (Orchestrator, Product Analyst, System Architect, UI/UX Designer, Software Developer, QA Engineer, Security Engineer, DevOps Engineer, Technical Writer).
+## Modul
 
-Panduan lengkap topologi, batasan wewenang (*boundary policies*), dan protokol jabat tangan (*cross-agent handshake*) dapat dilihat pada:
-- **[Agent Skills Ecosystem & Governance Guide](docs/AGENT_SKILLS_ECOSYSTEM.md)**
-- **[Laporan Audit Kualitas & Remediasi Multi-Agent](docs/PROJECT_VERIFICATION_AUDIT.md)**
-- **Spesifikasi & Diagram Arsitektur**: `Parking_System.drawio` (Use Case, Activity Diagram, ERD, dan Wireframes)
+| Halaman | Status |
+|---|---|
+| **Vehicle Entry** | **Berfungsi penuh** — validasi plat, cek duplikat, cek kapasitas, hitung tarif, simpan ke PostgreSQL |
+| Vehicle Exit | Tampilan saja |
+| Transaction History | Tampilan saja |
+| Daily Report | Tampilan saja |
+| Jukir Dashboard | Tampilan saja |
+| Admin Dashboard | Tampilan saja |
+| Parking Areas | Tampilan saja |
+| Jukir Accounts | Tampilan saja |
+| Report Validation | Tampilan saja |
+| Export Reports | Tampilan saja |
+
+---
+
+## Alur Logic Vehicle Entry
+
+```
+Views/VehicleEntry.cs          SaveEntryButton_Click  (baris 68)
+        ↓
+Database/InMemoryDb.cs         CreateEntry            (baris 61)
+        ↓                      ├─ validasi format plat
+                               ├─ tolak plat aktif ganda
+                               ├─ tolak area penuh
+                               ├─ hitung tarif per jenis
+                               └─ Occupied++ & SaveChanges
+        ↓
+Database/ParkingDbContext.cs   EF Core → PostgreSQL
+```
+
+---
+
+## Catatan Teknis
+
+- **Zona waktu**: kolom waktu disimpan UTC, ditampilkan WIB (UTC+7) lewat `ValueConverter`
+  di `ParkingDbContext`. Npgsql menolak `DateTimeOffset` dengan offset selain 0.
+- **Verifikasi skema**: `DatabaseInitializer` memastikan seluruh tabel wajib ada.
+  `EnsureCreated()` saja akan gagal senyap bila database tujuan sudah berisi tabel lain.
+- **Nama tabel** mengikuti `DbSet` (PascalCase), sehingga query manual memerlukan
+  tanda kutip ganda: `SELECT * FROM "Transactions";`
+
+---
+
+## Spesifikasi & Diagram
+
+`Parking_System.drawio` berisi Use Case, Activity Diagram, ERD, dan Wireframe.
+
+Dokumentasi tata kelola pengembangan:
+- [Agent Skills Ecosystem](docs/AGENT_SKILLS_ECOSYSTEM.md)
