@@ -15,6 +15,9 @@ public static class InMemoryDb
     /// <summary>Akses ke singleton ParkingDbContext</summary>
     private static ParkingDbContext Db => ParkingDbContext.Instance;
 
+    /// <summary>Queryable untuk seluruh akun pengguna</summary>
+    public static IQueryable<AppUser> Users => Db.Users;
+
     /// <summary>Queryable untuk seluruh titik area parkir</summary>
     public static IQueryable<ParkingSpot> Spots => Db.Spots;
 
@@ -179,6 +182,54 @@ public static class InMemoryDb
         Db.Transactions.Remove(tx);
         Db.SaveChanges();
         return (true, "Tiket berhasil dibatalkan.");
+    }
+
+    /// <summary>
+    /// Menghitung durasi parkir dan biaya tagihan saat kendaraan ingin keluar.
+    /// Durasi dibulatkan ke atas per jam penuh (minimal 1 jam) dikalikan tarif masuk.
+    /// Sesuai diagram Draw.io alur: "Calculate parking duration and vehicle fare".
+    /// </summary>
+    /// <param name="plateNumber">Nomor plat kendaraan yang dicari</param>
+    /// <returns>Transaksi aktif yang ditemukan dan estimasi total biaya</returns>
+    public static (ParkingTransaction? Tx, decimal CalculatedFare) CalculateExit(string plateNumber)
+    {
+        string normalized = plateNumber.Trim().ToUpperInvariant();
+        var tx = Db.Transactions.FirstOrDefault(t => t.PlateNumber == normalized && t.Status == "ACTIVE");
+        if (tx == null) return (null, 0);
+
+        var duration = DateTimeOffset.Now - tx.EntryTime;
+        var hours = Math.Max(1, (int)Math.Ceiling(duration.TotalHours));
+        decimal fare = tx.RateAtEntry * hours;
+        return (tx, fare);
+    }
+
+    /// <summary>
+    /// Menyelesaikan proses pembayaran kendaraan keluar (checkout).
+    /// Mengubah status menjadi 'COMPLETED', mencatat waktu keluar, dan mengurangi kapasitas area.
+    /// Sesuai diagram Draw.io alur: "Update status to completed and save transaction".
+    /// </summary>
+    /// <param name="txId">ID transaksi parkir</param>
+    /// <param name="exitJukirId">ID jukir yang menerima pembayaran keluar</param>
+    /// <param name="fare">Jumlah biaya yang dibayarkan</param>
+    /// <returns>True jika transaksi berhasil diselesaikan</returns>
+    public static bool ProcessExit(int txId, int exitJukirId, decimal fare)
+    {
+        var tx = Db.Transactions.FirstOrDefault(t => t.Id == txId && t.Status == "ACTIVE");
+        if (tx == null) return false;
+
+        var jukir = Db.Users.FirstOrDefault(u => u.Id == exitJukirId);
+        tx.ExitTime = DateTimeOffset.Now;
+        tx.Fare = fare;
+        tx.Status = "COMPLETED";
+        tx.ExitJukirId = exitJukirId;
+        tx.ExitJukirName = jukir?.Name ?? "Jukir";
+
+        var spot = Db.Spots.FirstOrDefault(s => s.Id == tx.ParkingSpotId);
+        if (spot != null && spot.Occupied > 0)
+            spot.Occupied--; // Kurangi counter kendaraan terisi
+
+        Db.SaveChanges();
+        return true;
     }
 
     /// <summary>

@@ -6,7 +6,18 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <Version>1.0.0</Version>
+    <AssemblyTitle>ParkirAja</AssemblyTitle>
+    <Product>ParkirAja</Product>
+    <Company>ParkirAja</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\logo-256.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Views\Login.cs;Views\MainForm.cs">

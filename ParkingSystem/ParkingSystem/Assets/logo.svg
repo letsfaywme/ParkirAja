@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="ParkirAja logo">
+  <title>ParkirAja</title>
+  <defs>
+    <linearGradient id="pk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#pk)"/>
+  <path fill="#FFFFFF" fill-rule="evenodd"
+        d="M158 108 h56 a86 86 0 0 1 0 172 h-56 z
+           M214 152 a42 42 0 0 1 0 84 v-84 z"/>
+  <rect x="158" y="108" width="56" height="288" rx="28" fill="#FFFFFF"/>
+</svg>

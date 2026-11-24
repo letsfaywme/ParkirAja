@@ -1,9 +1,13 @@
+<p align="center">
+  <img src="ParkingSystem/ParkingSystem/Assets/logo-256.png" alt="ParkirAja logo" width="120">
+</p>
+
 # ParkirAja — Parking System (.NET 10 / Windows Forms)
 
 Sistem aplikasi desktop manajemen parkir berbasis Windows Forms (.NET 10) dengan
 Entity Framework Core dan database **PostgreSQL**.
 
-Fokus implementasi: **modul Vehicle Entry** (pencatatan kendaraan masuk).
+Fokus implementasi: **Vehicle Entry** dan **Vehicle Exit** (siklus masuk–keluar kendaraan).
 Halaman lain dipertahankan sebagai tampilan (desain utuh) tanpa logic data.
 
 ---
@@ -15,6 +19,7 @@ Parking System/
 ├─ README.md
 ├─ docs/
 │  ├─ Parking_System.drawio       # Use Case, Activity Diagram, ERD, Wireframe
+│  ├─ PRESENTASI.md               # Panduan demo & antisipasi pertanyaan
 │  ├─ POSTGRES_NAVICAT_RUNBOOK.md # Panduan database + Navicat
 │  └─ AGENT_SKILLS_ECOSYSTEM.md   # Tata kelola pengembangan multi-agent
 └─ ParkingSystem/
@@ -24,7 +29,9 @@ Parking System/
    ├─ Directory.Packages.props
    ├─ ParkingSystem/              # Aplikasi utama
    │  ├─ Program.cs               # Entry point + DI
+   │  ├─ AppBrand.cs              # Ikon jendela & logo merek
    │  ├─ ISessionAware.cs
+   │  ├─ Assets/                  # logo.svg, logo.png, app.ico
    │  ├─ Controls/                # Komponen UI kustom
    │  ├─ Database/                # DbContext, settings, repositori
    │  ├─ Models/                  # Entitas bisnis
@@ -108,7 +115,7 @@ bukan teks biasa. Lihat `Security/PasswordHasher.cs`.
 | Halaman | Status |
 |---|---|
 | **Vehicle Entry** | **Berfungsi penuh** — validasi plat, cek duplikat, cek kapasitas, hitung tarif, simpan ke PostgreSQL |
-| Vehicle Exit | Tampilan saja |
+| **Vehicle Exit** | **Berfungsi penuh** — cari tiket aktif, hitung durasi & tarif, checkout, lepas slot |
 | Transaction History | Tampilan saja |
 | Daily Report | Tampilan saja |
 | Jukir Dashboard | Tampilan saja |

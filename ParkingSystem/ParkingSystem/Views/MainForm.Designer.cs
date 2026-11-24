@@ -13,6 +13,7 @@ partial class MainForm
     private void InitializeComponent()
     {
         sidebar = new Panel();
+        brandLogo = new PictureBox();
         brandLabel = new Label();
         workspaceLabel = new Label();
         dashboardButton = new Button();
@@ -28,6 +29,7 @@ partial class MainForm
         // sidebar
         // 
         sidebar.BackColor = Color.FromArgb(240, 253, 244);
+        sidebar.Controls.Add(brandLogo);
         sidebar.Controls.Add(brandLabel);
         sidebar.Controls.Add(workspaceLabel);
         sidebar.Controls.Add(dashboardButton);
@@ -43,14 +45,26 @@ partial class MainForm
         sidebar.Size = new Size(262, 884);
         sidebar.TabIndex = 1;
         // 
+        // brandLogo
+        // 
+        brandLogo.BackColor = Color.Transparent;
+        brandLogo.Location = new Point(25, 32);
+        brandLogo.Margin = new Padding(0);
+        brandLogo.Name = "brandLogo";
+        brandLogo.Size = new Size(40, 40);
+        brandLogo.SizeMode = PictureBoxSizeMode.Zoom;
+        brandLogo.TabIndex = 0;
+        brandLogo.TabStop = false;
+        brandLogo.Image = AppBrand.Logo;
+        // 
         // brandLabel
         // 
         brandLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
         brandLabel.ForeColor = Color.FromArgb(15, 23, 42);
-        brandLabel.Location = new Point(25, 35);
+        brandLabel.Location = new Point(74, 35);
         brandLabel.Margin = new Padding(4, 0, 4, 0);
         brandLabel.Name = "brandLabel";
-        brandLabel.Size = new Size(225, 38);
+        brandLabel.Size = new Size(176, 38);
         brandLabel.TabIndex = 0;
         brandLabel.Text = "ParkirAja";
         // 
@@ -168,6 +182,7 @@ partial class MainForm
         Margin = new Padding(4, 4, 4, 4);
         MinimumSize = new Size(1146, 738);
         Name = "MainForm";
+        Icon = AppBrand.Icon;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "ParkirAja — Jukir Dashboard";
         sidebar.ResumeLayout(false);
@@ -175,6 +190,7 @@ partial class MainForm
     }
 
     private Panel sidebar = null!;
+    private PictureBox brandLogo = null!;
     private Label brandLabel = null!;
     private Label workspaceLabel = null!;
     private Button dashboardButton = null!;

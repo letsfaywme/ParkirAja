@@ -26,10 +26,23 @@ partial class Login
         spacer4 = new Panel();
         demoHintLabel = new Label();
         loginFields = new Panel();
+        loginLogo = new PictureBox();
         usernamePanel.SuspendLayout();
         passwordPanel.SuspendLayout();
         loginFields.SuspendLayout();
         SuspendLayout();
+        // 
+        // loginLogo
+        // 
+        loginLogo.BackColor = Color.Transparent;
+        loginLogo.Location = new Point(240, 30);
+        loginLogo.Margin = new Padding(0);
+        loginLogo.Name = "loginLogo";
+        loginLogo.Size = new Size(120, 120);
+        loginLogo.SizeMode = PictureBoxSizeMode.Zoom;
+        loginLogo.TabIndex = 13;
+        loginLogo.TabStop = false;
+        loginLogo.Image = AppBrand.Logo;
         // 
         // label1
         // 
@@ -214,6 +227,7 @@ partial class Login
         loginFields.Controls.Add(label3);
         loginFields.Controls.Add(spacer1);
         loginFields.Controls.Add(label1);
+        loginFields.Controls.Add(loginLogo);
         loginFields.Location = new Point(0, 0);
         loginFields.Margin = new Padding(0);
         loginFields.Name = "loginFields";
@@ -234,6 +248,7 @@ partial class Login
         MaximizeBox = false;
         MinimumSize = new Size(520, 688);
         Name = "Login";
+        Icon = AppBrand.Icon;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "ParkirAja — Sign In";
         usernamePanel.ResumeLayout(false);
@@ -244,6 +259,7 @@ partial class Login
         ResumeLayout(false);
     }
     #endregion
+    private PictureBox loginLogo = null!;
     private Label label1 = null!;
     private Panel spacer1 = null!;
     private Label label3 = null!;

@@ -66,7 +66,7 @@ partial class JukirDashboard
         label6.BackColor = Color.Transparent;
         label6.ForeColor = AppTheme.Text;
         label6.TabIndex = 6;
-        label6.Text = "128";
+        label6.Text = "0";
         label6.ForeColor = AppTheme.Text;
         label6.Font = new Font("Segoe UI", 17.22F, FontStyle.Bold);
         label8.Name = "label8";
@@ -101,7 +101,7 @@ partial class JukirDashboard
         label13.BackColor = Color.Transparent;
         label13.ForeColor = AppTheme.Text;
         label13.TabIndex = 13;
-        label13.Text = "96";
+        label13.Text = "0";
         label13.ForeColor = AppTheme.Text;
         label13.Font = new Font("Segoe UI", 17.22F, FontStyle.Bold);
         label15.Name = "label15";
@@ -136,7 +136,7 @@ partial class JukirDashboard
         label20.BackColor = Color.Transparent;
         label20.ForeColor = AppTheme.Text;
         label20.TabIndex = 20;
-        label20.Text = "Rp 624.000";
+        label20.Text = "Rp 0";
         label20.ForeColor = AppTheme.Text;
         label20.Font = new Font("Segoe UI", 17.22F, FontStyle.Bold);
         label22.Name = "label22";
