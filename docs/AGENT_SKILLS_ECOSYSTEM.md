@@ -45,7 +45,7 @@ Ekosistem SDLC ParkirAja didukung oleh 9 peran agen terspesialisasi dengan keter
 | **1. Orchestrator** | `subagent-driven-development`, `dispatching-parallel-agents`, `writing-plans` | Koordinasi task DAG, manajemen dependensi antar-agen, verifikasi gate SDLC. **Dilarang keras menulis kode produksi.** |
 | **2. Product Analyst** | `to-spec`, `to-tickets` | Menganalisis kebutuhan parkir (jukir, admin, tarif flat/progresif), menyusun PRD & spesifikasi, memecah user story menjadi actionable tickets. |
 | **3. System Architect** | `architecture-patterns`, `architecture-decision-records`, `optimizing-ef-core-queries`, `postgresql-table-design`, `design-doc-mermaid` | Mendesain Clean Architecture, menyusun ADR, merancang skema PostgreSQL, optimasi query EF Core & pencegahan N+1 problem. |
-| **4. UI/UX Designer** | `ui-ux-pro-max`, `design-system`, `drawio`, `design-doc-mermaid` | Menjaga konsistensi tema desktop WinForms (`AppTheme`, `RoundedControls`, `DarkDateTimePicker`), merawat diagram alur di `Parking_System.drawio`. |
+| **4. UI/UX Designer** | `ui-ux-pro-max`, `design-system`, `drawio`, `design-doc-mermaid` | Menjaga konsistensi tema desktop WinForms (`AppTheme`, `RoundedControls`, `DarkDateTimePicker`), merawat diagram alur di `docs/Parking_System.drawio`. |
 | **5. Software Developer** | `dotnet-best-practices`, `dotnet-backend-patterns`, `csharp-async`, `test-driven-development`, `csharp-refactoring` | Mengimplementasikan service layer, repository pattern, async/await non-blocking UI thread, dan business logic parkir. |
 | **6. QA Engineer** | `csharp-xunit`, `test-anti-patterns`, `run-tests`, `verification-before-completion` | Menyusun unit test xUnit, regression test, audit anti-mocking & anti-tautologi test, eksekusi test runner CLI. |
 | **7. Security Engineer** | `security-and-hardening`, `email-and-password-best-practices`, `getsentry/security-review` | Audit hashing kredensial (PBKDF2/Argon2), mitigasi SQL injection pada PostgreSQL, proteksi brute force dan session management. |
@@ -97,7 +97,7 @@ sequenceDiagram
         ARCH-->>ORCH: ADR (architecture-decision-records) & SQL Schema
     and
         ORCH->>UI: Dispatch Penyelarasan Alur Antarmuka
-        UI-->>ORCH: Update Parking_System.drawio & Desain View
+        UI-->>ORCH: Update docs/Parking_System.drawio & Desain View
     end
 
     ORCH->>DEV: Handoff Spesifikasi, ADR, & Wireframe

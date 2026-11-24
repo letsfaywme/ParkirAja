@@ -13,8 +13,8 @@ Halaman lain dipertahankan sebagai tampilan (desain utuh) tanpa logic data.
 ```
 Parking System/
 ├─ README.md
-├─ Parking_System.drawio          # Use Case, Activity Diagram, ERD, Wireframe
 ├─ docs/
+│  ├─ Parking_System.drawio       # Use Case, Activity Diagram, ERD, Wireframe
 │  ├─ POSTGRES_NAVICAT_RUNBOOK.md # Panduan database + Navicat
 │  └─ AGENT_SKILLS_ECOSYSTEM.md   # Tata kelola pengembangan multi-agent
 └─ ParkingSystem/
@@ -150,7 +150,7 @@ Database/ParkingDbContext.cs   EF Core → PostgreSQL
 
 ## Spesifikasi & Diagram
 
-`Parking_System.drawio` berisi Use Case, Activity Diagram, ERD, dan Wireframe.
+`docs/Parking_System.drawio` berisi Use Case, Activity Diagram, ERD, dan Wireframe.
 
 Dokumentasi tata kelola pengembangan:
 - [Agent Skills Ecosystem](docs/AGENT_SKILLS_ECOSYSTEM.md)
