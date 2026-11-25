@@ -19,6 +19,22 @@
     <EmbeddedResource Include="Assets\logo-256.png" />
   </ItemGroup>
 
+  <!-- Berkas non-kode tetap ditampilkan di Solution Explorer agar struktur
+       di Visual Studio sama dengan struktur folder sebenarnya. -->
+  <ItemGroup>
+    <None Update=".env">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="app.manifest" />
+    <None Update="Assets\logo.svg" />
+    <None Update="Assets\logo.png" />
+    <None Update="Assets\logo-256.png" />
+    <None Update="Assets\app.ico" />
+    <None Include="..\.env.example" Link=".env.example" />
+    <None Include="..\Directory.Build.props" Link="Directory.Build.props" />
+    <None Include="..\Directory.Packages.props" Link="Directory.Packages.props" />
+  </ItemGroup>
+
   <ItemGroup>
     <Compile Update="Views\Login.cs;Views\MainForm.cs">
       <SubType>Form</SubType>
