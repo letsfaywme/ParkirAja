@@ -35,10 +35,11 @@ partial class Login
         // loginLogo
         // 
         loginLogo.BackColor = Color.Transparent;
-        loginLogo.Location = new Point(240, 30);
-        loginLogo.Margin = new Padding(0);
+        loginLogo.Dock = DockStyle.Top;
+        loginLogo.Location = new Point(75, 100);
+        loginLogo.Margin = new Padding(0, 0, 0, 12);
         loginLogo.Name = "loginLogo";
-        loginLogo.Size = new Size(120, 120);
+        loginLogo.Size = new Size(450, 120);
         loginLogo.SizeMode = PictureBoxSizeMode.Zoom;
         loginLogo.TabIndex = 13;
         loginLogo.TabStop = false;

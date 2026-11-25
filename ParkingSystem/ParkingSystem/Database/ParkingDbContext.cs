@@ -212,6 +212,39 @@ public class ParkingDbContext : DbContext
                 Capacity = 50,
                 IsActive = true,
                 Occupied = 1
+            },
+            new ParkingSpot
+            {
+                Id = 3,
+                Name = "Area Parkir Selatan",
+                Address = "Jl. Fatmawati No. 12, Jakarta Selatan",
+                MotorcycleRate = 2000,
+                CarRate = 5000,
+                Capacity = 80,
+                IsActive = true,
+                Occupied = 0
+            },
+            new ParkingSpot
+            {
+                Id = 4,
+                Name = "Area Parkir Basement",
+                Address = "Jl. Gatot Subroto No. 88, Jakarta Selatan",
+                MotorcycleRate = 3000,
+                CarRate = 6000,
+                Capacity = 120,
+                IsActive = true,
+                Occupied = 0
+            },
+            new ParkingSpot
+            {
+                Id = 5,
+                Name = "Area Parkir Bandara",
+                Address = "Terminal 2, Bandara Soekarno-Hatta",
+                MotorcycleRate = 2500,
+                CarRate = 7000,
+                Capacity = 200,
+                IsActive = true,
+                Occupied = 0
             }
         );
 

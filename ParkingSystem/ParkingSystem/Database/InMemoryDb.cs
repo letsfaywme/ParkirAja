@@ -56,6 +56,16 @@ public static class InMemoryDb
     /// 2. Kapasitas area parkir tidak boleh terlampaui.
     /// Sesuai diagram Draw.io alur: "Vehicle Entry Log".
     /// </summary>
+    /// <remarks>
+    /// PRESENTASI: ini JANTUNG dari modul Vehicle Entry.
+    /// Empat aturan dijalankan berurutan, dan setiap penolakan mengembalikan
+    /// pesan yang langsung bisa ditampilkan ke pengguna:
+    ///   ATURAN 1 (baris "Format nomor plat")  -> tolak plat yang tidak sesuai format Indonesia
+    ///   ATURAN 2 (baris "Cek duplikasi")      -> tolak kendaraan yang masih parkir
+    ///   ATURAN 3 (baris "Cek daya tampung")   -> tolak kalau area sudah penuh
+    ///   ATURAN 4 (baris "Tarif")              -> tentukan tarif per jam sesuai jenis kendaraan
+    /// Setelah lolos semua aturan, tiket ditulis ke PostgreSQL dan counter area ditambah.
+    /// </remarks>
     /// <param name="spotId">ID area parkir</param>
     /// <param name="jukirId">ID petugas jukir yang bertugas</param>
     /// <param name="plateNumber">Nomor plat kendaraan</param>
@@ -63,39 +73,50 @@ public static class InMemoryDb
     /// <returns>Tuple berisi status keberhasilan, pesan notifikasi, dan objek transaksi</returns>
     public static (bool Success, string Message, ParkingTransaction? Tx) CreateEntry(int spotId, int jukirId, string plateNumber, VehicleType type)
     {
+        // Normalisasi: buang spasi tepi dan ubah ke huruf besar.
+        // Tujuannya agar "b 1234 abc" dan "B 1234 ABC" dianggap plat yang sama.
         string normalizedPlate = plateNumber.Trim().ToUpperInvariant();
 
-        // Validasi format plat nomor Indonesia standar (misal: B 1234 ABC, D 99 X, AB 1 A)
+        // ATURAN 1 - Validasi format plat nomor Indonesia standar.
+        // Pola: 1-2 huruf, spasi, 1-4 angka, spasi, 1-3 huruf. Contoh: B 1234 ABC, D 99 X.
         if (!Regex.IsMatch(normalizedPlate, @"^[A-Z]{1,2}\s\d{1,4}\s[A-Z]{1,3}$"))
         {
             return (false, $"Format nomor plat '{normalizedPlate}' tidak valid. Contoh format standar: 'B 1234 ABC'.", null);
         }
 
-        // Cek duplikasi kendaraan yang belum checkout
+        // ATURAN 2 - Tolak duplikasi: satu plat hanya boleh punya satu tiket ACTIVE.
+        // Mencegah kendaraan yang sama tercatat masuk dua kali sebelum keluar.
         if (IsVehicleParked(normalizedPlate))
         {
             return (false, $"Kendaraan dengan plat {normalizedPlate} masih tercatat aktif di area parkir!", null);
         }
 
+        // Ambil area parkir yang dipilih. Bila ID tidak ditemukan, pakai area pertama
+        // sebagai cadangan agar aplikasi tidak berhenti karena data area bermasalah.
         var spot = Db.Spots.FirstOrDefault(s => s.Id == spotId) ?? Db.Spots.First();
 
-        // Cek daya tampung area
+        // ATURAN 3 - Cek daya tampung area.
+        // Occupied adalah jumlah kendaraan yang sedang parkir di area tersebut.
         if (spot.Occupied >= spot.Capacity)
         {
             return (false, $"Area parkir '{spot.Name}' sudah penuh ({spot.Occupied}/{spot.Capacity})!", null);
         }
 
+        // ATURAN 4 - Tentukan tarif per jam berdasarkan jenis kendaraan.
+        // Motor memakai MotorcycleRate, mobil memakai CarRate. Tarif disimpan
+        // di tiket (RateAtEntry) supaya perubahan tarif nanti tidak mengubah tiket lama.
         var jukir = Db.Users.FirstOrDefault(u => u.Id == jukirId);
         decimal rate = type == VehicleType.Motorcycle ? spot.MotorcycleRate : spot.CarRate;
 
-        // Auto-increment ID transaksi berikutnya
+        // Nomor tiket berikutnya. Dihitung dari ID terbesar + 1.
         int nextId = (Db.Transactions.Max(t => (int?)t.Id) ?? 0) + 1;
 
+        // Susun data tiket baru. Status awal selalu ACTIVE (kendaraan masih di dalam).
         var tx = new ParkingTransaction
         {
             Id = nextId,
             ParkingSpotId = spot.Id,
-            LocationName = spot.Name,
+            LocationName = spot.Name,   // nama lokasi disalin agar riwayat tetap terbaca
             JukirId = jukirId,
             JukirName = jukir?.Name ?? "Jukir",
             PlateNumber = normalizedPlate,
@@ -105,9 +126,9 @@ public static class InMemoryDb
             Status = "ACTIVE"
         };
 
-        Db.Transactions.Add(tx);
-        spot.Occupied++; // Tambah counter kendaraan terisi
-        Db.SaveChanges();
+        Db.Transactions.Add(tx);   // daftarkan tiket baru
+        spot.Occupied++;           // tambah counter kendaraan terisi di area ini
+        Db.SaveChanges();          // tulis ke PostgreSQL (satu transaksi)
 
         return (true, "Tiket berhasil dibuat.", tx);
     }
